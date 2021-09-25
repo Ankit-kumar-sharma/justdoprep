@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+*
+{
+    font-family: 'Poiret One', cursive;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container
+{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+}
+.header
+{
+    position: sticky;
+    /* position: relative; */
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    
+    /* color: black; */
+}
+.logoName
+{
+    font-family: 'Poiret One', cursive;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+}
+.logo
+{
+    height: 57px;
+    width: 60px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.sidebar
+{
+    position: fixed;
+    top:70px;
+    background-color: black;
+    left: 0;
+    border: 1px solid black;
+    width: 25%;
+    height: 100vh;
+    left: -100%;
+    transition: 1s;
+    /* display: none; */
+}
+.show-btn
+{
+    cursor: pointer;
+    position: fixed;
+    /* color: black; */
+    color: white;
+    left: 20px;
+    top: 20px;
+    font-size: 22px;
+    z-index: 3;
+    width: 35px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    /* background-color:rgb(107, 107, 107); */
+    /* z-index: 20; */
+}
+.sidebar ul
+{
+    list-style-type: none;
+}
+.sidebar ul li
+{
+    display: block;
+    border-bottom: 1px solid #bfbfbf;
+    text-align: left;
+    height: 40px;
+    line-height: 40px;
+    width: 98%;
+    /* margin: auto; */
+    margin-left: 5px;
+    margin-bottom: 30px;
+    padding-left: 5px;
+    /* position: relative; */
+    transition-property: border;
+    transition-duration: .2s;
+}
+.sidebar ul li a
+{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+.sidebar ul li:hover
+{
+border-left: 7px solid #bfbfbf;
+}
+.sidebar ul li:last-child
+{
+    margin-bottom: -15px;
+    border-bottom: none;
+}
+.fas 
+{
+    font-size: 22px;
+    margin-right: 10px;
+    /* position: absolute;
+    left: 0px;
+    top: 8px; */
+}
+.socialContainer
+{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.socialContainer a
+{
+
+    text-decoration: none;
+    color:#bfbfbf;
+    font-size: 30px;
+    transition: 1s;
+}
+.socialContainer a:hover
+{
+    transform: scale(1.2);
+    color: white;
+}
+.body
+{
+    width: 98%;
+    height: auto;
+    border: 1px solid black;
+    margin: auto;
+}
+.searchBar
+{
+    width: 98%;
+    height: 50px;
+    margin: 5px auto;
+    border: 1px solid black;
+}
+.slider
+{
+    width: 98%;
+    height: 550px;
+    margin: auto;
+    border: 1px solid black;
+}
+.titleContainer
+{
+    width: 98%;
+    margin: 20px auto;
+    height: 50px;
+    border: 1px solid black;
+}
+.courseContainer
+{
+    width: 98%;
+    height: 550px;
+    border: 1px solid black;
+    margin: 5px auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.courseInfo
+{
+    width: 24%;
+    height: 95%;
+    border:1px solid black
+}
+.mentorContainer
+{
+    width: 98%;
+    height: 550px;
+    border: 1px solid black;
+    margin: 5px auto;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.mentorInfo
+{
+        width: 24%;
+        height: 95%;
+        border:1px solid black
+}
+.suggestionContainer
+{
+    height: 550px;
+    width: 98%;
+    border: 1px solid black;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.commentBox
+{
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+}
+.ratingContainer
+{
+    width: 59%;
+    height: 100%;
+    border: 1px solid black;
+}
+.companyDrivesQuesContainer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px auto;
+    width: 100%;
+    height: 88vh;
+    border: 1px solid black;
+}
+.leftContainer
+{
+    width: 20%;
+    height: 100%;
+    border: 1px solid black;
+}
+.rightContainer
+{
+    width: 79%;
+    height: 100%;
+    border: 1px solid black;
+}
+.profileContainer
+{
+    margin: auto;
+    width:100%;
+    height: auto;
+    border: 1px solid black;  
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.CreatorInfo
+{
+cursor: pointer;
+margin: 100px auto;
+height: 250px;
+width: 250px;
+/* border-radius: 50%; */
+border: 1px solid black;
+transform: rotate(45deg);
+transition: .5s;
+}
+.CreatorInfo:hover
+{
+height: 320px;
+width: 320px;
+transform: rotate(0deg);
+border-radius: 50%;
+}
+.donation
+{
+    width: 98%;
+    height: 550px;
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 20px;
+}
+.footer
+{
+    width: 98%;
+    margin: 20px auto;
+    height: 550px;
+    border: 1px solid black;
+}
+#check:checked ~ .body .sidebar
+{
+    left: 0%;
+}
+#check:checked ~ .show-btn
+{
+    background-color:rgb(107, 107, 107);
+}
