@@ -195,7 +195,7 @@ border-left: 7px solid #bfbfbf;
 }
 .searchBtn
 {
-    width: 50px;
+    width: 100px;
     height: 100%;
     /* border:1px solid black; */
     display: flex;
@@ -372,5 +372,9 @@ border-radius: 50%;
    {
        position: fixed;
        top: 0;
+   }
+   .searchBtn
+   {
+       width: 50px;
    }
 }
