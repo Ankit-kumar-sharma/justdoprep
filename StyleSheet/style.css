@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
 *
 {
-    font-family: 'Poiret One', cursive;
+    /* font-family: 'Poiret One', cursive; */
+    font-family: 'Quicksand', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -80,30 +83,55 @@
 }
 .sidebar ul li
 {
+    position: relative;
     display: block;
-    border-bottom: 1px solid #bfbfbf;
+    /* border: 1px solid white; */
+    /* border-bottom: 1px solid #bfbfbf; */
     text-align: left;
     height: 40px;
     line-height: 40px;
     width: 98%;
     /* margin: auto; */
     margin-left: 5px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     padding-left: 5px;
     /* position: relative; */
-    transition-property: border;
-    transition-duration: .2s;
+    /* transition-property: border;
+    transition-duration: .2s; */
+}
+.sidebar ul li::before
+{
+    content: '';
+    height: 1px;
+    width: 0px;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    background-color: white;
+    transition: width 1s;
+}
+.sidebar ul li:hover::before
+{
+    width: 100%;
+}
+.sidebar ul li:first-child
+{
+    border-bottom: 1px solid white;
+}
+.sidebar ul li:first-child:hover::before
+{
+    width: 0px;
 }
 .sidebar ul li a
 {
     text-decoration: none;
     color: white;
-    font-size: 22px;
+    font-size: 20px;
 }
-.sidebar ul li:hover
+/* .sidebar ul li:hover
 {
 border-left: 7px solid #bfbfbf;
-}
+} */
 .sidebar ul li:last-child
 {
     margin-bottom: -15px;
