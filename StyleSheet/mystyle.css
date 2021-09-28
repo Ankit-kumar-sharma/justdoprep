@@ -206,8 +206,16 @@ border-left: 7px solid #bfbfbf;
 }
 .fa-search
 {
+    color: gray;
     cursor: pointer;
+    transition: transform 1s;
 }
+.fa-search:hover
+{
+    transform: scale(1.1);
+    color: black;
+}
+
 .slider
 {
     width: 98%;
@@ -350,7 +358,7 @@ border-radius: 50%;
     background-color:rgb(107, 107, 107);
 }
 
-@media screen and (max-width:750px)
+@media (max-width:750px)
 {
     .body
     {
