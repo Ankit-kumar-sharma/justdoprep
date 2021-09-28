@@ -14,7 +14,7 @@
 {
     width: 100%;
     height: auto;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .header
 {
@@ -23,7 +23,7 @@
     top: 0px;
     width: 100%;
     height: 70px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-bottom: 5px;
     background-color: black;
     display: flex;
@@ -326,6 +326,7 @@ width: 250px;
 border: 1px solid black;
 transform: rotate(45deg);
 transition: .5s;
+z-index: -1;
 }
 .CreatorInfo:hover
 {
@@ -375,12 +376,16 @@ border-radius: 50%;
     }
     .show-btn
     {
-        left:2px;
+        left:3px;
     }
    .header
    {
        position: fixed;
-       top: 0;
+        top: 0;
+   }
+   .searchBar
+   {
+       margin-top: 75px;
    }
    .searchBtn
    {
