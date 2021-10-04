@@ -216,7 +216,7 @@ border-left: 7px solid #bfbfbf;
   height: 550px;
   margin: auto;
   /* border: 1px solid black; */
-  background: url(./Image/header.svg);
+  background: url(./Image/hOption.svg);
   background-position: right;
   background-size:contain;
   background-repeat: no-repeat;
@@ -590,5 +590,29 @@ border-left: 7px solid #bfbfbf;
    box-shadow: none;
    transform: none;
    border: none;
+  }
+  .typingAnimationContainer
+  {
+    /* border: 1px solid black; */
+    margin: auto;
+    margin-top: 10px;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0px;
+  }
+  .slider
+  {
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  .getStarted
+  {
+    margin: auto;
+  }
+
+  .typingText
+  {
+    font-size: 28px;
+
   }
 }
