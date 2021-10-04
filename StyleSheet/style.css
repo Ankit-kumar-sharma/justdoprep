@@ -337,6 +337,14 @@ border-left: 7px solid #bfbfbf;
   padding: 5px;
   /* border: 1px solid black; */
 }
+.courseInfo:hover .cBtnContainer
+{
+  background-color: black;
+}
+.courseInfo:hover .jBtn
+{
+  color: white;
+}
 .cBtnContainer
 {
   display: flex;
@@ -347,6 +355,7 @@ border-left: 7px solid #bfbfbf;
   height:50px;
   /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
+
 .jBtn
 {
   text-decoration: none;
@@ -358,6 +367,7 @@ border-left: 7px solid #bfbfbf;
   text-align: center;
   line-height: 50px;
 }
+
 .cHeading
 {
   text-align: center;
