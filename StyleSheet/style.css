@@ -390,7 +390,7 @@ border-left: 7px solid #bfbfbf;
   cursor: pointer;
   width: 310px;
   height: 460px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   transition: transform .5s;
   margin-bottom: 5px;
 }
@@ -409,25 +409,57 @@ border-left: 7px solid #bfbfbf;
 .jobProfile
 {
   width: 100%;
-  height: 40px;
+  height: 70px;
   display: flex;
   align-items: center;
   font-size: 18px;
   justify-content: center;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+.jProfilePara
+{
+  text-align: center;
 }
 .profileInfo
 {
   width: 100%;
-  height: 180px;
-  border: 1px solid black;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: center;
+  /* border: 1px solid black; */
+}
+.cName
+{
+  font-size: 20px;
+  text-align: center;
+}
+.email
+{
+  text-decoration: none;
+  text-align: center;
 }
 .mentorPhoneContainer
 {
-  margin-top: 15px;
-  height: 50px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+.phoneNumber
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color:white;
+  background-color: black;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
 }
 .suggestionContainer {
   height: 550px;
@@ -542,6 +574,16 @@ border-left: 7px solid #bfbfbf;
   .courseInfo
   {
     width: 100%;
+  }
+  .mentorInfo
+  {
+    width: 100%;
+  }
+  .mentorInfo:hover
+  {
+    box-shadow: none;
+    transform: none;
+    border: none;
   }
   .courseInfo:hover
   {
