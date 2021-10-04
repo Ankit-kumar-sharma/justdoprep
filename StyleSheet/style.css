@@ -11,6 +11,11 @@
   margin: 0;
   box-sizing: border-box;
 }
+html
+{
+  scroll-behavior: smooth;
+  scroll-padding-top: 170px;
+}
 .container {
   width: 100%;
   height: auto;
@@ -56,6 +61,7 @@
   left: -100%;
   padding-left: 10px;
   transition: 1s;
+  z-index: 2;
   /* display: none; */
 }
 .show-btn {
@@ -212,7 +218,7 @@ border-left: 7px solid #bfbfbf;
   /* border: 1px solid black; */
   background: url(./Image/header.svg);
   background-position: right;
-  background-size: contain;
+  background-size:contain;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -243,7 +249,11 @@ border-left: 7px solid #bfbfbf;
   }
 }
 .getStarted {
-  background-color: white;
+  background: linear-gradient(to right,black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right;
+  transition: all .5s ease-out;
+  /* background-color: white; */
   border: 1px solid black;
   width: 205px;
   color: black;
@@ -260,40 +270,163 @@ border-left: 7px solid #bfbfbf;
 }
 .getStarted:hover {
   color: white;
-  background-color: black;
+  background-position: left;
 }
 .titleContainer {
   width: 98%;
-  margin: 20px auto;
+  margin: 45px auto;
   height: 50px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title
+{
+  font-size: 35px;
 }
 .courseContainer {
-  width: 98%;
-  height: 550px;
-  border: 1px solid black;
+  width: 99%;
+  height: auto;
+  /* border: 1px solid black; */
   margin: 5px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .courseInfo {
-  width: 24%;
-  height: 95%;
-  border: 1px solid black;
+  width: 310px;
+  height: 450px;
+  /* border: 1px solid black; */
+  /* border:1px solid rgba(0, 0, 0, 0.1); */
+  transition: all .5s;
+  z-index: 0;
+
+}
+.courseInfo:hover
+{
+  border:1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transform: scale(1.1);
+  /* box-shadow: 0px 0px 10px #bfbfbf; */
+}
+.imgContainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin: auto;
+  margin-top: 25px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: whitesmoke;
+  /* border: 1px solid black; */
+  /* padding-top: 25px; */
+}
+.dataContainer
+{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  padding: 5px;
+  /* border: 1px solid black; */
+}
+.cBtnContainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  height:50px;
+  /* border: 1px solid rgba(0, 0, 0, 0.1); */
+}
+.jBtn
+{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 22px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+.cHeading
+{
+  text-align: center;
+  font-size: 24px;
+  /* margin-bottom: 50px; */
+}
+
+.jBtn:hover
+{
+  color:white;
+  background-color:black;
+}
+.courseIcon
+{
+  height: 80px;
+  width: 80px;
+  /* margin-bottom: 5px; */
 }
 .mentorContainer {
   width: 98%;
-  height: 550px;
-  border: 1px solid black;
-  margin: 5px auto;
+  height: auto;
+  /* border: 1px solid black; */
+  margin: 0px auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .mentorInfo {
-  width: 24%;
-  height: 95%;
+  cursor: pointer;
+  width: 310px;
+  height: 460px;
+  border: 1px solid black;
+  transition: transform .5s;
+  margin-bottom: 5px;
+}
+.mentorIcon
+{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+.mentorInfo:hover
+{
+  border:1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+.jobProfile
+{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  justify-content: center;
+  border: 1px solid black;
+}
+.profileInfo
+{
+  width: 100%;
+  height: 180px;
+  border: 1px solid black;
+}
+.mentorPhoneContainer
+{
+  margin-top: 15px;
+  height: 50px;
+  width: 100%;
   border: 1px solid black;
 }
 .suggestionContainer {
@@ -378,6 +511,8 @@ border-left: 7px solid #bfbfbf;
 }
 #check:checked ~ .show-btn {
   background-color: rgb(107, 107, 107);
+  /* background-color: white; */
+  /* color: black; */
 }
 
 @media (max-width: 750px) {
@@ -403,5 +538,15 @@ border-left: 7px solid #bfbfbf;
   }
   .searchBtn {
     width: 50px;
+  }
+  .courseInfo
+  {
+    width: 100%;
+  }
+  .courseInfo:hover
+  {
+   box-shadow: none;
+   transform: none;
+   border: none;
   }
 }

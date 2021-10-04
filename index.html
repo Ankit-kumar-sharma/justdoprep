@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>justdoprep</title>
     <link rel="stylesheet" href="./StyleSheet/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="shortcut icon" href="./Images/graduation-hat (2).png" type="image/x-icon">    
 </head>
 <body>
     <div class="container">
@@ -22,13 +23,13 @@
                 <ul>
                     <li><a href="#"><i class="fa fa-home fas"></i><span>Home</span></a></li>
                     <li><a href="#"><i class="fa fa-address-book-o fas"></i><span>About Us</span></a></li>
-                    <li><a href="#"><i class="fa fa-book fas"></i><span>Courses</span></a></li>
+                    <li><a href="#courses"><i class="fa fa-book fas"></i><span>Courses</span></a></li>
                     <li><a href="#"><i class="fa fa-code fas"></i><span>Questions</span></a></li>
                     <li><a href="#"><i class="fa fa-users fas"></i><span>Services</span></a></li>
                     <li><a href="#"><i class="fa fa-codepen fas"></i><span>Practice</span></a></li>
                     <li><a href="#"><i class="fa fa-comment-o fas"></i><span>Feedback</span></a></li>
                     <li><a href="#"><i class="fa fa-gamepad fas"></i><span>Problems</span></a></li>
-                    <li><a href="#"><i class="fa fa-black-tie fas"></i><span>Mentor</span></a></li>
+                    <li><a href="#mentor"><i class="fa fa-black-tie fas"></i><span>Mentor</span></a></li>
                     <li><a href="#"><i class="fa fa-universal-access fas"></i><span>Users</span></a></li>
                     <li><a href="#"><i class="fa fa-commenting-o fas"></i><span>Reviews</span></a></li>
                     <li><a href="#"><i class="fa fa-phone fas"></i><span>Contact Us</span></a></li>
@@ -53,19 +54,90 @@
                 </div>
                 <span class="getStarted">Get Started</span>
             </div>
-            <div class="titleContainer"></div>
-            <div class="courseContainer">
-                <div class="courseInfo" id="courseinfo1"></div>
-                <div class="courseInfo" id="courseinfo2"></div>
-                <div class="courseInfo" id="courseinfo3"></div>
-                <div class="courseInfo" id="courseinfo4"></div>
+            <div class="titleContainer"><span class="title">Courses</span></div>
+            <div class="courseContainer" id="courses">
+                <div class="courseInfo" id="courseinfo1">
+                    <div class="imgContainer">
+                        <img src="./Images/frontend.png" alt="" class="courseIcon">
+                    </div>
+                    <div class="dataContainer">
+                        <p class="cHeading">Frontend</p>
+                        <q style="color: black; text-align: center; margin-top: 50px; font-size: 20px;">Creativity is intelligence having fun.</q>
+                        <p style="text-align: right; font-size: 19px;">- Albert Einstein</p>
+                    </div>
+                    <div class="cBtnContainer">
+                        <a href="#" class="jBtn">Join</a>
+                    </div>
+                </div>
+                <div class="courseInfo" id="courseinfo2">
+                    <div class="imgContainer">
+                        <img src="./Images/backend.png" alt="" class="courseIcon">
+                    </div>
+                    <div class="dataContainer">
+                        <p class="cHeading">Backend</p>
+                        <q style="color: black; text-align: center; margin-top: 50px; font-size: 20px;">I'm very analytical and I'm very precise.</q>
+                        <p style="text-align: right; font-size: 19px;">- Sundar Pichai</p>
+                    
+                    </div>
+                    <div class="cBtnContainer">
+                        <a href="#" class="jBtn">Join</a>
+                    </div>
+                </div>
+                <div class="courseInfo" id="courseinfo3">
+                    <div class="imgContainer">
+                        <img src="./Images/backend (1).png" alt="" class="courseIcon">
+                    </div>
+                    <div class="dataContainer">
+                        <p class="cHeading">Full Stack</p>
+                        <q style="color: black; text-align: center; margin-top: 50px; font-size: 20px;">Innovation is the only way to win.</q>
+                        <p style="text-align: right; font-size: 19px;">- Steve Jobs</p>
+                    </div>
+                    <div class="cBtnContainer">
+                        <a href="#" class="jBtn">Join</a>
+                    </div> 
+                </div>
+                <div class="courseInfo" id="courseinfo4">
+                    <div class="imgContainer">
+                        <img src="./Images/algorithm.png" alt="" class="courseIcon">
+                    </div>
+                    <div class="dataContainer">
+                        <p class="cHeading">Data Structure</p>
+                        <q style="color: black; text-align: center; margin-top: 50px; font-size: 20px;">Fear is the enemy of logic.</q>
+                        <br>
+                        <p style="text-align: right; font-size: 19px;">- Frank Sinatra</p>
+                    </div>
+                    <div class="cBtnContainer">
+                        <a href="#" class="jBtn">Join</a>
+                    </div>
+                </div>
             </div>
-            <div class="titleContainer"></div>
-            <div class="mentorContainer">
-                <div class="mentorInfo" id="mentorinfo1"></div>
-                <div class="mentorInfo" id="mentorinfo2"></div>
-                <div class="mentorInfo" id="mentorinfo3"></div>
-                <div class="mentorInfo" id="mentorinfo4"></div>
+            <div class="titleContainer"><span class="title">Mentor</span></div>
+            <div class="mentorContainer" id="mentor">
+                <div class="mentorInfo" id="mentorinfo1">
+                    <div class="imgContainer">
+                        <img src="./Images/img1.jpg" alt="" class="mentorIcon">
+                    </div>
+                    <div class="jobProfile">
+                        Full Stack Developer
+                    </div>
+                    <div class="profileInfo"></div>
+                    <div class="mentorPhoneContainer"></div>
+                </div>
+                <div class="mentorInfo" id="mentorinfo2">
+                    <div class="imgContainer">
+                        <img src="./Images/img3.jpg" alt="" class="mentorIcon">
+                    </div>
+                </div>
+                <div class="mentorInfo" id="mentorinfo3">
+                    <div class="imgContainer">
+                       <img src="./Images/img4.jpg" alt="" class="mentorIcon">
+                    </div>
+                </div>
+                <div class="mentorInfo" id="mentorinfo4">
+                    <div class="imgContainer">
+                        <img src="./Images/img2.jpg" alt="" class="mentorIcon">
+                    </div>
+                </div>
             </div>
             <div class="titleContainer"></div>
             <div class="suggestionContainer">
