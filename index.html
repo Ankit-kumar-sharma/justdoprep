@@ -11,14 +11,14 @@
     <!-- <link rel="shortcut icon" href="./Images/graduation-hat (2).png" type="image/x-icon">     -->
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <input type="checkbox" name="" id="check" style="display: none;">
-        <label for="check" class="show-btn"><i class="fa fa-bars"></i></label>
-        <div class="header">
-            <img src="./Images/logo.png" alt="" class="logo">
-            <p class="logoName">justdoprep</p>
+        <label for="check" class="show-btn"><i class="fa fa-bars" id="bars"></i></label>
+        <div class="header" id="header">
+            <img src="./Images/logo.png" alt="" class="logo" id="logo">
+            <p class="logoName" id="logoName">justdoprep</p>
         </div>
-        <div class="body">
+        <div class="body" id="body">
             <div class="sidebar">
                
                 <ul>
@@ -46,14 +46,17 @@
             </div>
             <div class="searchBar">
                 <input type="text" placeholder="Search here" class="search" id="Search" onfocusout="shrink()">
-                <span class="searchBtn"><label for="Search"><i class="fa fa-search"  onclick="expand()"></i></label></span>
+                <span class="searchBtn"><label for="Search"><i class="fa fa-search"  onclick="expand()" id="searchIcon"></i></label></span>
             </div>
-            <div class="slider">
+            <div class="slider" id="slider">
                 <!-- <img src="./Images/header.svg" alt="" style="width: 100%; height: 100%;"> -->
                 <div class="typingAnimationContainer">
-                    <p class="typingText">Start your journey with us.</p>
+                    <p class="typingText" id="typingText">Start your journey with us.</p>
                 </div>
                 <span class="getStarted">Get Started</span>
+                <div class="mode">
+                        <span class="lightSun" onclick="changeMode()"><i class="fa fa-moon-o darkMode" id="sun"></i></span>
+                </div>
             </div>
             <div class="titleContainer"><span class="title">Courses</span></div>
             <div class="courseContainer" id="courses">
@@ -69,6 +72,7 @@
                     <div class="cBtnContainer">
                         <a href="#" class="jBtn">Join</a>
                     </div>
+                   
                 </div>
                 <div class="courseInfo" id="courseinfo2">
                     <div class="imgContainer">
@@ -216,7 +220,15 @@
                 <div class="CreatorInfo"></div>
                 <div class="CreatorInfo"></div>
             </div>
-            <div class="donation"></div>
+            <div class="donation">
+                <div class="Donate">
+                   
+                </div>
+                <div class="subscribe">
+                    <p class="subText">Subscribe Us</p>
+                    <input type="email" name="sEmail" id="sEmail">
+                </div>
+            </div>
             <div class="titleContainer"><span class="title">Help</span></div>
             <div class="footer" id="footer">
                 <div class="addressInfo">
@@ -284,7 +296,7 @@
            
             </div>
             <div class="copyright">
-                <span>Copyright	&copy; 2021 All Rights Reversed By justdoprep</span>
+                <span>@justdoprep, Some rights reserved.</span>
             </div>
         </div>
     </div>

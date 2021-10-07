@@ -565,11 +565,45 @@ border-left: 7px solid #bfbfbf;
   border-radius: 50%;
 }
 .donation {
-  width: 98%;
+  width: 100%;
   height: 550px;
+  display: flex;
   border: 1px solid black;
   margin: auto;
   margin-top: 20px;
+}
+.Donate{
+width: 70%;
+height: 550px;
+border: 1px solid black;
+}
+input[type=email]{
+  border: none;
+  width: 70%;
+  height: 40px;
+  font-size: 20px;
+  margin: auto;
+  outline: none;
+  background: transparent;
+  border-bottom:1px solid black;
+}
+.subscribe{
+  width: 30%;
+  /* display: flex;
+  justify-content: flex-start; */
+  /* align-items: center; */
+  /* flex-direction: column; */
+height: 550px;
+border: 1px solid black;
+background: url(../Images/newsletter.svg);
+background-size: contain;
+background-position: bottom;
+background-repeat: no-repeat;
+}
+.subText{
+  font-size: 30px;
+  text-align: center;
+  margin-top: 25px;
 }
 .footerWebName
 {
@@ -799,4 +833,28 @@ border-left: 7px solid #bfbfbf;
     margin: auto;
     margin-top: 40px;
   }
+}
+.mode
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  height: 60px;
+  width: 60px;
+  /* border: 1px solid black; */
+  background-color: black;
+  border-radius: 50%;
+}
+.lightSun
+{
+
+  font-size: 25px;
+}
+.darkMode
+{
+  color: white;
+  cursor: pointer;
 }
