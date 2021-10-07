@@ -305,6 +305,7 @@ border-left: 7px solid #bfbfbf;
   /* border:1px solid rgba(0, 0, 0, 0.1); */
   transition: all .5s;
   z-index: 0;
+  /* margin-bottom: 40px; */
 
 }
 .courseInfo:hover
@@ -342,9 +343,10 @@ border-left: 7px solid #bfbfbf;
 }
 .courseInfo:hover .cBtnContainer
 {
+  /* color: white; */
   background-color: black;
 }
-.courseInfo:hover .jBtn
+.bColor
 {
   color: white;
 }
