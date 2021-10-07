@@ -1,3 +1,17 @@
+console.log(scrollY);
+window.onscroll=function()
+{
+    if(scrollY>=4389)
+    {
+        document.getElementById('logoName').style="display:none";
+        // alert("Hello");
+    }
+    else
+    {
+        document.getElementById('logoName').style="display:block;";
+        
+    }
+}
 function expand()
 {
     if(document.getElementById('sun').className=="fa fa-moon-o darkMode")
@@ -97,5 +111,8 @@ else
    arr.forEach(element => {
        element.style="color:white";
    });
+   let brr=Array.from(document.getElementById('footer').getElementsByTagName('a'));
+   console.log(brr);
+
 }
 }
