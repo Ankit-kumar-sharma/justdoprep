@@ -46,10 +46,15 @@ if(c==="fa fa-sun-o darkMode")
     document.getElementById('jBtn4').style="color:black;";
     document.getElementById('footerLogo').src="./Images/graduation-hat.png";
     document.getElementById('footer').style="color:black;";
+    document.getElementById('footerTitle').style="color:black;";
     document.getElementById('mentorinfo1').style="color:black";
     document.getElementById('mentorinfo2').style="color:black";
     document.getElementById('mentorinfo3').style="color:black";
     document.getElementById('mentorinfo4').style="color:black";
+    let arr=Array.from(document.getElementById('footer').getElementsByTagName('a'));
+   arr.forEach(element => {
+       element.style="color:black";
+   });
 }
 else
 {
@@ -87,6 +92,10 @@ else
     document.getElementsByClassName('fContent').style="color:white";
     // document.querySelectorAll('fContainer4');
     document.getElementById('footerLogo').src="./Images/logo.png";
-    document.getElementsByClassName('emailAddr').className="bColor";
+    // document.getElementsByClassName('emailAddr').className="bColor";
+   let arr=Array.from(document.getElementById('footer').getElementsByTagName('a'));
+   arr.forEach(element => {
+       element.style="color:white";
+   });
 }
 }

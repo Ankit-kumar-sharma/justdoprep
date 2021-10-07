@@ -626,6 +626,7 @@ background-repeat: no-repeat;
   border-top: 1px solid #bfbfbf;
   /* border: 1px solid black; */
 }
+
 .socialContainer2
 {
   display: flex;
@@ -649,7 +650,7 @@ background-repeat: no-repeat;
 }
 .addIcon:hover
 {
-  color: black;
+  color: gray;
   transform: scale(1.1);
 }
 .cInfoContainer
