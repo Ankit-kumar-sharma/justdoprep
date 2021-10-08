@@ -32,7 +32,7 @@
                     <li><a href="#"><i class="fa fa-gamepad fas"></i><span>Problems</span></a></li>
                     <li><a href="#mentor"><i class="fa fa-black-tie fas"></i><span>Mentor</span></a></li>
                     <li><a href="#"><i class="fa fa-universal-access fas"></i><span>Users</span></a></li>
-                    <li><a href="#"><i class="fa fa-commenting-o fas"></i><span>Reviews</span></a></li>
+                    <li><a href="#donation"><i class="fa fa-commenting-o fas"></i><span>Support</span></a></li>
                     <li><a href="#"><i class="fa fa-phone fas"></i><span>Contact Us</span></a></li>
                     <li><a href="#footer"><i class="fa fa-info-circle fas"></i><span>Help</span></a></li>
                 </ul>
@@ -220,13 +220,19 @@
                 <div class="CreatorInfo"></div>
                 <div class="CreatorInfo"></div>
             </div>
-            <div class="donation">
+            <div class="titleContainer">
+                <span class="title">Support</span>
+            </div>
+            <div class="donation" id="donation">
                 <div class="Donate">
                    
                 </div>
                 <div class="subscribe">
-                    <p class="subText">Subscribe Us</p>
-                    <input type="email" name="sEmail" id="sEmail">
+                    
+                    <label for="sEmail" class="subText">Subscribe Us</label>
+                    <input type="email" name="sEmail" id="sEmail" placeholder="Enter email address" onmouseout="checkButton()" autocomplete="off" required>
+                    <button class="subscribeBtn" id="subscribeBtn">Subscribe</button>
+           
                 </div>
             </div>
             <div class="titleContainer" ><span class="title" id="footerTitle">Help</span></div>

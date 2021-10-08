@@ -1,4 +1,19 @@
-console.log(scrollY);
+
+function checkButton()
+{
+    let email=document.getElementById('sEmail').value;
+    console.log(email);
+    if(email.length!==0)
+    {
+        document.getElementById('subscribeBtn').style="display:block";
+    }
+    else
+    {
+        document.getElementById('subscribeBtn').style="display:block";
+        
+    }
+}
+// console.log(scrollY);
 window.onscroll=function()
 {
     if(scrollY>=4389)
@@ -48,16 +63,20 @@ if(c==="fa fa-sun-o darkMode")
         document.getElementById('getStarted').style="color:white";
     });
    
+    document.getElementById('searchIcon').addEventListener('mouseover',function mouseOver()
+    {
+        document.getElementById('searchIcon').style="color:black";
+    });
  
     document.getElementById('title').style="color:black;";
     document.getElementById('courseinfo1').style="color:black; border:none;";
     document.getElementById('courseinfo2').style="color:black; border:none;";
     document.getElementById('courseinfo3').style="color:black; border:none;";
     document.getElementById('courseinfo4').style="color:black; border:none;";
-    document.getElementById('jBtn1').style="color:black;";
-    document.getElementById('jBtn2').style="color:black;";
-    document.getElementById('jBtn3').style="color:black;";
-    document.getElementById('jBtn4').style="color:black;";
+    // document.getElementById('jBtn1').style="color:black;";
+    // document.getElementById('jBtn2').style="color:black;";
+    // document.getElementById('jBtn3').style="color:black;";
+    // document.getElementById('jBtn4').style="color:black;";
     document.getElementById('footerLogo').src="./Images/graduation-hat.png";
     document.getElementById('footer').style="color:black;";
     document.getElementById('footerTitle').style="color:black;";
@@ -68,6 +87,10 @@ if(c==="fa fa-sun-o darkMode")
     let arr=Array.from(document.getElementById('footer').getElementsByTagName('a'));
    arr.forEach(element => {
        element.style="color:black";
+   });
+   let mentorLink=Array.from(document.getElementById('mentor').getElementsByTagName('a'));
+   mentorLink.forEach(element => {
+    element.style="color:black";
    });
 }
 else
@@ -111,8 +134,13 @@ else
    arr.forEach(element => {
        element.style="color:white";
    });
-   let brr=Array.from(document.getElementById('footer').getElementsByTagName('a'));
-   console.log(brr);
+//    let brr=Array.from(document.getElementById('footer').getElementsByTagName('a'));
+//    console.log(brr);
+   let mentorLink=Array.from(document.getElementById('mentor').getElementsByTagName('a'));
+   mentorLink.forEach(element => {
+    element.style="color:white";
+   });
+//    console.log(mentorLink);
 
 }
 }
