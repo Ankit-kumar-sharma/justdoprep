@@ -1,18 +1,5 @@
 
-function checkButton()
-{
-    let email=document.getElementById('sEmail').value;
-    console.log(email);
-    if(email.length!==0)
-    {
-        document.getElementById('subscribeBtn').style="display:block";
-    }
-    else
-    {
-        document.getElementById('subscribeBtn').style="display:block";
-        
-    }
-}
+
 // console.log(scrollY);
 window.onscroll=function()
 {
@@ -68,7 +55,7 @@ if(c==="fa fa-sun-o darkMode")
         document.getElementById('searchIcon').style="color:black";
     });
  
-    document.getElementById('title').style="color:black;";
+    // document.getElementById('title').style="color:black;";
     document.getElementById('courseinfo1').style="color:black; border:none;";
     document.getElementById('courseinfo2').style="color:black; border:none;";
     document.getElementById('courseinfo3').style="color:black; border:none;";
@@ -79,7 +66,7 @@ if(c==="fa fa-sun-o darkMode")
     // document.getElementById('jBtn4').style="color:black;";
     document.getElementById('footerLogo').src="./Images/graduation-hat.png";
     document.getElementById('footer').style="color:black;";
-    document.getElementById('footerTitle').style="color:black;";
+    // document.getElementById('footerTitle').style="color:black;";
     document.getElementById('mentorinfo1').style="color:black";
     document.getElementById('mentorinfo2').style="color:black";
     document.getElementById('mentorinfo3').style="color:black";
@@ -92,6 +79,13 @@ if(c==="fa fa-sun-o darkMode")
    mentorLink.forEach(element => {
     element.style="color:black";
    });
+   let title=Array.from(document.getElementsByClassName('titleContainer'));
+    title.forEach(element => {
+        element.style="color:black";
+    });
+   document.getElementById('sEmail').style="color:black";
+   document.getElementById('subText').style="color:black";
+   document.getElementById('subscribeBtn').style="border:none;";
 }
 else
 {
@@ -123,10 +117,18 @@ else
     document.getElementById('mentorinfo2').style="color:white";
     document.getElementById('mentorinfo3').style="color:white";
     document.getElementById('mentorinfo4').style="color:white";
-    document.getElementById('title').style="color:white;";
+    // document.getElementById('title').style="color:white;";
     document.getElementById('footer').style="color:white;";
-    document.getElementById('footerTitle').style="color:white;";
+    // document.getElementById('footerTitle').style="color:white;";
     document.getElementsByClassName('fContent').style="color:white";
+    document.getElementById('sEmail').style="color:white";
+    document.getElementById('subText').style="color:white";
+    let title=Array.from(document.getElementsByClassName('titleContainer'));
+    title.forEach(element => {
+        element.style="color:white";
+    });
+    console.log(title);
+    document.getElementById('subscribeBtn').style="border:1px solid white;";
     // document.querySelectorAll('fContainer4');
     document.getElementById('footerLogo').src="./Images/logo.png";
     // document.getElementsByClassName('emailAddr').className="bColor";
@@ -141,6 +143,6 @@ else
     element.style="color:white";
    });
 //    console.log(mentorLink);
-
+    
 }
 }
