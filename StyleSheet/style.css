@@ -538,7 +538,7 @@ border-left: 7px solid #bfbfbf;
   overflow: hidden;
   position: relative;
   cursor: pointer;
-  margin: 20px auto;
+  margin: 25px auto;
   height: 400px;
   width: 320px;
   /* border-radius: 50%; */
@@ -565,6 +565,10 @@ border-left: 7px solid #bfbfbf;
   font-size: 20px;
   margin-right: 20px;
 }
+.fac:hover
+{
+  color: white;
+}
 .creatorPictures
 {
   display: flex;
@@ -589,9 +593,21 @@ border-left: 7px solid #bfbfbf;
 }
 .creatorDesign
 {
+  height: 35px;
+  position: relative;
   font-size: 20px;
+  /* border: 1px solid black; */
   margin-top: 30px;
-  
+}
+.creatorDesign::before
+{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+  border: 1px solid var(--secondary-color);
+  width: 50px;
 }
 .textInfo
 {

@@ -86,6 +86,22 @@ if(c==="fa fa-sun-o darkMode")
    document.getElementById('sEmail').style="color:black";
    document.getElementById('subText').style="color:black";
    document.getElementById('subscribeBtn').style="border:none;";
+   let creatorDesign=Array.from(document.getElementsByClassName('creatorDesign'));
+creatorDesign.forEach(element => {
+    element.style="color:black";
+});
+let creatorPos=Array.from(document.getElementsByClassName('creatorPos'));
+creatorPos.forEach(element => {
+    element.style="color:black";
+});
+let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'));
+ creatorPictures.forEach(element=>{
+     element.style="height:130px";
+ });   
+ let creatorPhoto=Array.from(document.getElementsByClassName('creatorPhoto'));
+ creatorPhoto.forEach(element=>{
+     element.style="top:20px";
+ });
 }
 else
 {
@@ -143,6 +159,22 @@ else
     element.style="color:white";
    });
 //    console.log(mentorLink);
-    
+let creatorDesign=Array.from(document.getElementsByClassName('creatorDesign'));
+creatorDesign.forEach(element => {
+    element.style="color:white";
+});
+
+let creatorPos=Array.from(document.getElementsByClassName('creatorPos'));
+creatorPos.forEach(element => {
+    element.style="color:white";
+});
+ let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'));
+ creatorPictures.forEach(element=>{
+     element.style="height:165px";
+ });   
+ let creatorPhoto=Array.from(document.getElementsByClassName('creatorPhoto'));
+ creatorPhoto.forEach(element=>{
+     element.style="top:0px";
+ });
 }
 }
