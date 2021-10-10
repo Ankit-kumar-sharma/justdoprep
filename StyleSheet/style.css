@@ -577,6 +577,26 @@ width: 70%;
 height: 550px;
 border: 1px solid black;
 }
+.Donate:hover .dBtnContainer
+{
+  background-color: black;
+}
+.Donate:hover .dBtn
+{
+  color: white;
+}
+.dBtn
+{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 22px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
 input[type=email]{
   border: none;
   width: 70%;
