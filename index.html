@@ -1,420 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./Images/graduation-hat.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./Images/graduation-hat.png"
+      type="image/x-icon"
+    />
     <title>justdoprep</title>
-    <link rel="stylesheet" href="./StyleSheet/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./StyleSheet/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    />
     <!-- <link rel="shortcut icon" href="./Images/graduation-hat (2).png" type="image/x-icon">     -->
-</head>
-<body>
+  </head>
+  <body>
     <div class="container" id="container">
-        <input type="checkbox" name="" id="check" style="display: none;">
-        <label for="check" class="show-btn"><i class="fa fa-bars" id="bars"></i></label>
-        <div class="header" id="header">
-            <img src="./Images/logo.png" alt="" class="logo" id="logo">
-            <p class="logoName" id="logoName">justdoprep</p>
+      <input type="checkbox" name="" id="check" style="display: none" />
+      <label for="check" class="show-btn"
+        ><i class="fa fa-bars" id="bars"></i
+      ></label>
+      <div class="header" id="header">
+        <img src="./Images/logo.png" alt="" class="logo" id="logo" />
+        <p class="logoName" id="logoName">justdoprep</p>
+      </div>
+      <div class="body" id="body">
+        <div class="sidebar">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-home fas"></i><span>Home</span></a>
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-address-book-o fas"></i
+                ><span>About Us</span></a
+              >
+            </li>
+            <li>
+              <a href="#courses"
+                ><i class="fa fa-book fas"></i><span>Courses</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-code fas"></i><span>Questions</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-users fas"></i><span>Services</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-codepen fas"></i><span>Practice</span></a
+              >
+            </li>
+            <li>
+              <a href="#feedback"
+                ><i class="fa fa-comment-o fas"></i><span>Feedback</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-gamepad fas"></i><span>Problems</span></a
+              >
+            </li>
+            <li>
+              <a href="#mentor"
+                ><i class="fa fa-black-tie fas"></i><span>Mentor</span></a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa fa-universal-access fas"></i><span>Users</span></a
+              >
+            </li>
+            <li>
+              <a href="#donation"
+                ><i class="fa fa-commenting-o fas"></i><span>Support</span></a
+              >
+            </li>
+            <li>
+              <a href="#contactTeam"
+                ><i class="fa fa-phone fas"></i><span>Contact Us</span></a
+              >
+            </li>
+            <li>
+              <a href="#footer"
+                ><i class="fa fa-info-circle fas"></i><span>Help</span></a
+              >
+            </li>
+          </ul>
+          <div class="socialContainer">
+            <a href="https://www.linkedin.com/" target="_blank"
+              ><i class="fa fa-linkedin-square"></i
+            ></a>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa fa-facebook-square"></i
+            ></a>
+            <a href="https://web.whatsapp.com/" target="_blank"
+              ><i class="fa fa-whatsapp" target="_blank"></i
+            ></a>
+            <a href="https://www.twitter.com/" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa fa-instagram"></i
+            ></a>
+          </div>
         </div>
-        <div class="body" id="body">
-            <div class="sidebar">
-               
-                <ul>
-                    <li><a href="#"><i class="fa fa-home fas"></i><span>Home</span></a></li>
-                    <li><a href="#"><i class="fa fa-address-book-o fas"></i><span>About Us</span></a></li>
-                    <li><a href="#courses"><i class="fa fa-book fas"></i><span>Courses</span></a></li>
-                    <li><a href="#"><i class="fa fa-code fas"></i><span>Questions</span></a></li>
-                    <li><a href="#"><i class="fa fa-users fas"></i><span>Services</span></a></li>
-                    <li><a href="#"><i class="fa fa-codepen fas"></i><span>Practice</span></a></li>
-                    <li><a href="#"><i class="fa fa-comment-o fas"></i><span>Feedback</span></a></li>
-                    <li><a href="#"><i class="fa fa-gamepad fas"></i><span>Problems</span></a></li>
-                    <li><a href="#mentor"><i class="fa fa-black-tie fas"></i><span>Mentor</span></a></li>
-                    <li><a href="#"><i class="fa fa-universal-access fas"></i><span>Users</span></a></li>
-                    <li><a href="#donation"><i class="fa fa-commenting-o fas"></i><span>Support</span></a></li>
-                    <li><a href="#contactTeam"><i class="fa fa-phone fas"></i><span>Contact Us</span></a></li>
-                    <li><a href="#footer"><i class="fa fa-info-circle fas"></i><span>Help</span></a></li>
-                </ul>
-                <div class="socialContainer">
-                    <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
-                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-square"></i></a>
-                    <a href="https://web.whatsapp.com/" target="_blank"><i class="fa fa-whatsapp" target="_blank"></i></a>
-                    <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
-                </div>
-            </div>
-            <div class="searchBar">
-                <input type="text" placeholder="Search here" class="search" id="Search" onfocusout="shrink()">
-                <span class="searchBtn"><label for="Search"><i class="fa fa-search"  onclick="expand()" id="searchIcon"></i></label></span>
-            </div>
-            <div class="slider" id="slider">
-                <!-- <img src="./Images/header.svg" alt="" style="width: 100%; height: 100%;"> -->
-                <div class="typingAnimationContainer">
-                    <p class="typingText" id="typingText">Start your journey with us.</p>
-                </div>
-                <span class="getStarted" id="getStarted">Get Started</span>
-                <div class="mode">
-                        <span class="lightSun" onclick="changeMode()"><i class="fa fa-moon-o darkMode" id="sun"></i></span>
-                </div>
-            </div>
-            <div class="titleContainer"><span class="title" id="title">Courses</span></div>
-            <div class="courseContainer" id="courses">
-                <div class="courseInfo" id="courseinfo1">
-                    <div class="imgContainer">
-                        <img src="./Images/frontend.png" alt="" class="courseIcon">
-                    </div>
-                    <div class="dataContainer">
-                        <p class="cHeading">Frontend</p>
-                        <q style="text-align: center; margin-top: 50px; font-size: 20px;">Creativity is intelligence having fun.</q>
-                        <p style="text-align: right; font-size: 19px;">- Albert Einstein</p>
-                    </div>
-                    <div class="cBtnContainer">
-                        <a href="#" class="jBtn" id="jBtn1">Join</a>
-                    </div>
-                   
-                </div>
-                <div class="courseInfo" id="courseinfo2">
-                    <div class="imgContainer">
-                        <img src="./Images/backend.png" alt="" class="courseIcon">
-                    </div>
-                    <div class="dataContainer">
-                        <p class="cHeading">Backend</p>
-                        <q style="text-align: center; margin-top: 50px; font-size: 20px;">I'm very analytical and I'm very precise.</q>
-                        <p style="text-align: right; font-size: 19px;">- Sundar Pichai</p>
-                    
-                    </div>
-                    <div class="cBtnContainer">
-                        <a href="#" class="jBtn" id="jBtn2">Join</a>
-                    </div>
-                </div>
-                <div class="courseInfo" id="courseinfo3">
-                    <div class="imgContainer">
-                        <img src="./Images/backend (1).png" alt="" class="courseIcon">
-                    </div>
-                    <div class="dataContainer">
-                        <p class="cHeading">Full Stack</p>
-                        <q style="text-align: center; margin-top: 50px; font-size: 20px;">Innovation is the only way to win.</q>
-                        <p style="text-align: right; font-size: 19px;">- Steve Jobs</p>
-                    </div>
-                    <div class="cBtnContainer">
-                        <a href="#" class="jBtn" id="jBtn3">Join</a>
-                    </div> 
-                </div>
-                <div class="courseInfo" id="courseinfo4">
-                    <div class="imgContainer">
-                        <img src="./Images/algorithm.png" alt="" class="courseIcon">
-                    </div>
-                    <div class="dataContainer">
-                        <p class="cHeading">Data Structure</p>
-                        <q style="text-align: center; margin-top: 50px; font-size: 20px;">Fear is the enemy of logic.</q>
-                        <br>
-                        <p style="text-align: right; font-size: 19px;">- Frank Sinatra</p>
-                    </div>
-                    <div class="cBtnContainer">
-                        <a href="#" class="jBtn" id="jBtn4">Join</a>
-                    </div>
-                </div>
-            </div>
-            <div class="titleContainer"><span class="title">Mentor</span></div>
-            <div class="mentorContainer" id="mentor">
-                <div class="mentorInfo" id="mentorinfo1">
-                    <div class="imgContainer">
-                        <img src="./Images/img1.jpg" alt="" class="mentorIcon">
-                    </div>
-                    <div class="jobProfile">
-                     <p class="jProfilePara">
-                           Pankaj Kapoor
-                           <br>
-                        (Technical Trainer)
-                    
-                     </p>  
-                    </div>
-                    <div class="profileInfo">
-                        <p class="cName">GLA University Mathura</p>
-                        <br>
-                       <a href="mailto:ankitkumarsharmacse@gmail.com" class="email"> <span>Email: </span>pankaj.kapoor@gla.ac.in</a>
-                    </div>
-                    <div class="mentorPhoneContainer">
-                        <span class="phoneNumber"><i class="fa fa-phone"></i></span>
-                    </div>
-                </div>
-                <div class="mentorInfo" id="mentorinfo2">
-                    <div class="imgContainer">
-                        <img src="./Images/img3.jpg" alt="" class="mentorIcon">
-                    </div>
-                    <div class="jobProfile">
-                        <p class="jProfilePara">
-                              Shabnam Sandhi
-                              <br>
-                           (Project Manager)
-                       
-                        </p>  
-                       </div>
-                       <div class="profileInfo">
-                           <p class="cName">Amazon</p>
-                           <br>
-                          <a href="mailto:ankitkumarsharmacse@gmail.com" class="email"><span class="emailAddr">Email:</span>shabnam.shandhi@gmail.com</a>
-                       </div>
-                       <div class="mentorPhoneContainer">
-                           <span class="phoneNumber"><i class="fa fa-phone"></i></span>
-                       </div>
-                </div>
-                <div class="mentorInfo" id="mentorinfo3">
-                    <div class="imgContainer">
-                       <img src="./Images/img4.jpg" alt="" class="mentorIcon">
-                    </div>
-                    <div class="jobProfile">
-                        <p class="jProfilePara">
-                              Madan Naik
-                              <br>
-                           (SDE-I)
-                       
-                        </p>  
-                       </div>
-                       <div class="profileInfo">
-                           <p class="cName">Infosys</p>
-                           <br>
-                          <a href="mailto:ankitkumarsharmacse@gmail.com" class="email"> <span class="emailAddr">Email: </span>madan.naik@gmail.com</a>
-                       </div>
-                       <div class="mentorPhoneContainer">
-                           <span class="phoneNumber"><i class="fa fa-phone"></i></span>
-                       </div>
-                </div>
-                <div class="mentorInfo" id="mentorinfo4">
-                    <div class="imgContainer">
-                        <img src="./Images/img2.jpg" alt="" class="mentorIcon">
-                    </div>
-                    <div class="jobProfile">
-                        <p class="jProfilePara">
-                              Sneh Prajapati
-                              <br>
-                           (Software Engineer)
-                       
-                        </p>  
-                       </div>
-                       <div class="profileInfo">
-                           <p class="cName">Microsoft</p>
-                           <br>
-                          <a href="mailto:ankitkumarsharmacse@gmail.com" class="email"> <span class="emailAddr">Email: </span>sneh.prajapati@gmail.com</a>
-                       </div>
-                       <div class="mentorPhoneContainer">
-                           <span class="phoneNumber"><i class="fa fa-phone"></i></span>
-                       </div>
-                </div>
-            </div>
-            <div class="titleContainer"></div>
-            <div class="suggestionContainer">
-                <div class="commentBox"></div>
-                <div class="ratingContainer"></div>
-            </div>
-            <div class="titleContainer"></div>
-            <div class="companyDrivesQuesContainer">
-                <div class="leftContainer"></div>
-                <div class="rightContainer"></div>
-            </div>
-            <div class="titleContainer">
-                <span class="title">Our Team</span>
-            </div>
-            <div class="profileContainer" id="contactTeam">
-                <div class="CreatorInfo">
-                    <div class="creatorPictures">
-                        <img src="./Images/ravi.png" alt="" class="creatorPhoto">
-                    </div>
-                    <p class="creatorPos">Ankit Kumar Sharma</p>
-                    <p class="creatorDesign">Developer</p>
-                    <div class="creatorSocialMedia">
-                        <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                    </div>
-                    <div class="textInfo">
-                        <span class="quoteContainer">
-                            <i class="fa fa-quote-left"></i>
-                        </span>
-                        <p class="viewCreator">Imgination is more powerful than knowledge.</p>
-                        <div class="creatorSocialMedia">
-                            <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="CreatorInfo">
-                    <div class="creatorPictures">
-                        <img src="./Images/me.png" alt="" class="creatorPhoto">
-                    </div>
-                    <p class="creatorPos">Ravi Beniwal</p>
-                    <p class="creatorDesign">Designer</p>
-                    <div class="textInfo">
-                        <span class="quoteContainer">
-                            <i class="fa fa-quote-left"></i>
-                        </span>
-                        <p class="viewCreator">Imgination is more powerful than knowledge.</p>
-                        <div class="creatorSocialMedia">
-                            <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                        </div>
-                    </div>
-                    <div class="creatorSocialMedia">
-                        <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                    </div>
-                </div>
-                <div class="CreatorInfo">
-                    <div class="creatorPictures">
-                        <img src="./Images/kishore.png" alt="" class="creatorPhoto">
-                    </div>
-                    <p class="creatorPos">Kishore Kant Tiwari</p>
-                    <p class="creatorDesign">Developer</p>
-                    <div class="textInfo">
-                        <span class="quoteContainer">
-                            <i class="fa fa-quote-left"></i>
-                        </span>
-                        <p class="viewCreator">Imgination is more powerful than knowledge.</p>
-                        <div class="creatorSocialMedia">
-                            <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                        </div>
-                    </div>
-                    <div class="creatorSocialMedia">
-                        <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                    </div>
-                </div>
-                <div class="CreatorInfo">
-                    <div class="creatorPictures">
-                        <img src="./Images/naman.png" alt="" class="creatorPhoto">
-                    </div>
-                    <p class="creatorPos">Naman Sharma</p>
-                    <p class="creatorDesign">Designer</p>
-                    <div class="textInfo">
-                        <span class="quoteContainer">
-                            <i class="fa fa-quote-left"></i>
-                        </span>
-                        <p class="viewCreator">Imgination is more powerful than knowledge.</p>
-                        <div class="creatorSocialMedia">
-                            <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                            <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                        </div>
-                    </div>
-                    <div class="creatorSocialMedia">
-                        <span class="cSocialIcons"><i class="fa fa-instagram fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-linkedin fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-twitter fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-facebook fac"></i></span>
-                        <span class="cSocialIcons"><i class="fa fa-whatsapp fac"></i></span>
-                    </div>
-                </div>
-            </div>
-            <div class="titleContainer">
-                <span class="title">Support</span>
-            </div>
-            <div class="donation" id="donation">
-                <div class="Donate">
-                   
-                </div>
-                <div class="subscribe">
-                    
-                    <label for="sEmail" class="subText" id="subText">Subscribe Us</label>
-                    <input type="email" name="sEmail" id="sEmail" placeholder="Enter email address" onmouseout="checkButton()" autocomplete="off" required>
-                    <button class="subscribeBtn" id="subscribeBtn">Subscribe</button>
-           
-                </div>
-            </div>
-            <div class="titleContainer" ><span class="title" id="footerTitle">Help</span></div>
-            <div class="footer" id="footer">
-                <div class="addressInfo">
-                    <div class="siteInfo">
-                        <img src="./Images/graduation-hat.png" alt="" style="width:60px; height: 57px;" id="footerLogo">
-                        <p class="footerWebName">justdoprep</p>    
-                    </div>
-                    <p class="addr"><i class="fa fa-globe addrs"></i>5th floor, AB-18, <br> Sector-136,Greator Noida, Uttar Pradesh-201305</p>
-                    <p class="addr"><i class="fa fa-envelope addrs"></i>feedback@justdoprep.org</p>
-                    <p class="addr"><i class="fa fa-phone addrs"></i>+91-7452091852</p>
-                    <div class="socialContainer2">
-                        <a href="https://www.linkedin.com/" target="_blank" class="sLink"><i class="fa fa-linkedin-square addIcon"></i></a>
-                        <a href="https://www.facebook.com/" target="_blank" class="sLink"><i class="fa fa-facebook-square addIcon"></i></a>
-                        <a href="https://web.whatsapp.com/" target="_blank" class="sLink"><i class="fa fa-whatsapp addIcon" target="_blank"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank" class="sLink"><i class="fa fa-twitter addIcon"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank" class="sLink"><i class="fa fa-instagram addIcon"></i></a>
-                    </div>
-                   </div>
-                <div class="cInfoContainer">
-                    <p style="font-size: 25px; margin-top: 40px;">Company</p>
-                    <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Career</a></li>
-                        <li><a href="#">Support</a></li>
-                        <li><a href="#contactTeam">Contact Us</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Copyright Policy</a></li>
-                    </ul>
-                </div>
-                <div class="cInfoContainer">
-                    <p style="font-size: 25px; margin-top: 40px;">Learn</p>
-                    <ul>
-                        <li><a href="#">Algorithms</a></li>
-                        <li><a href="#">Data Strucure</a></li>
-                        <li><a href="#">Languages</a></li>
-                        <li><a href="#">CS Subjects</a></li>
-                        <li><a href="#">CS Notes</a></li>
-                        <li><a href="#">Video Tutorials</a></li>
-                    </ul>
-                </div>
-             
-                <div class="cInfoContainer">
-                    <p style="font-size: 25px; margin-top: 40px;">Web Development</p>
-                    <ul>
-                        <li><a href="#">Html</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                        <li><a href="#">Bootstrap</a></li>
-                        <li><a href="#">JQuery</a></li>
-                        <li><a href="#">Web Tutorials</a></li>
-                    </ul>
-                </div>
-             
-                <div class="cInfoContainer" id="fContainer4">
-                    <p style="font-size: 25px; margin-top: 40px;">Contribute</p>
-                    <ul>
-                        <li><a href="#">Write an Artical</a></li>
-                        <li><a href="#">Interview Experience</a></li>
-                        <li><a href="#">Internship</a></li>
-                        <li><a href="#">Video</a></li>
-                                                        
-                    </ul>
-                </div>
-             
-           
-            </div>
-            <div class="copyright">
-                <span>@justdoprep, Some rights reserved.</span>
-            </div>
+        <div class="searchBar">
+          <input
+            type="text"
+            placeholder="Search here"
+            class="search"
+            id="Search"
+            onfocusout="shrink()"
+          />
+          <span class="searchBtn"
+            ><label for="Search"
+              ><i
+                class="fa fa-search"
+                onclick="expand()"
+                id="searchIcon"
+              ></i></label
+          ></span>
         </div>
+        <div class="slider" id="slider">
+          <!-- <img src="./Images/header.svg" alt="" style="width: 100%; height: 100%;"> -->
+          <div class="typingAnimationContainer">
+            <p class="typingText" id="typingText">
+              Start your journey with us.
+            </p>
+          </div>
+          <span class="getStarted" id="getStarted">Get Started</span>
+          <div class="mode">
+            <span class="lightSun" onclick="changeMode()"
+              ><i class="fa fa-moon-o darkMode" id="sun"></i
+            ></span>
+          </div>
+        </div>
+        <div class="titleContainer">
+          <span class="title" id="title">Courses</span>
+        </div>
+        <div class="courseContainer" id="courses">
+          <div class="courseInfo" id="courseinfo1">
+            <div class="imgContainer">
+              <img src="./Images/frontend.png" alt="" class="courseIcon" />
+            </div>
+            <div class="dataContainer">
+              <p class="cHeading">Frontend</p>
+              <q style="text-align: center; margin-top: 50px; font-size: 20px"
+                >Creativity is intelligence having fun.</q
+              >
+              <p style="text-align: right; font-size: 19px">
+                - Albert Einstein
+              </p>
+            </div>
+            <div class="cBtnContainer">
+              <a href="#" class="jBtn" id="jBtn1">Join</a>
+            </div>
+          </div>
+          <div class="courseInfo" id="courseinfo2">
+            <div class="imgContainer">
+              <img src="./Images/backend.png" alt="" class="courseIcon" />
+            </div>
+            <div class="dataContainer">
+              <p class="cHeading">Backend</p>
+              <q style="text-align: center; margin-top: 50px; font-size: 20px"
+                >I'm very analytical and I'm very precise.</q
+              >
+              <p style="text-align: right; font-size: 19px">- Sundar Pichai</p>
+            </div>
+            <div class="cBtnContainer">
+              <a href="#" class="jBtn" id="jBtn2">Join</a>
+            </div>
+          </div>
+          <div class="courseInfo" id="courseinfo3">
+            <div class="imgContainer">
+              <img src="./Images/backend (1).png" alt="" class="courseIcon" />
+            </div>
+            <div class="dataContainer">
+              <p class="cHeading">Full Stack</p>
+              <q style="text-align: center; margin-top: 50px; font-size: 20px"
+                >Innovation is the only way to win.</q
+              >
+              <p style="text-align: right; font-size: 19px">- Steve Jobs</p>
+            </div>
+            <div class="cBtnContainer">
+              <a href="#" class="jBtn" id="jBtn3">Join</a>
+            </div>
+          </div>
+          <div class="courseInfo" id="courseinfo4">
+            <div class="imgContainer">
+              <img src="./Images/algorithm.png" alt="" class="courseIcon" />
+            </div>
+            <div class="dataContainer">
+              <p class="cHeading">Data Structure</p>
+              <q style="text-align: center; margin-top: 50px; font-size: 20px"
+                >Fear is the enemy of logic.</q
+              >
+              <br />
+              <p style="text-align: right; font-size: 19px">- Frank Sinatra</p>
+            </div>
+            <div class="cBtnContainer">
+              <a href="#" class="jBtn" id="jBtn4">Join</a>
+            </div>
+          </div>
+        </div>
+        <div class="titleContainer"><span class="title">Mentor</span></div>
+        <div class="mentorContainer" id="mentor">
+          <div class="mentorInfo" id="mentorinfo1">
+            <div class="imgContainer">
+              <img src="./Images/img1.jpg" alt="" class="mentorIcon" />
+            </div>
+            <div class="jobProfile">
+              <p class="jProfilePara">
+                Pankaj Kapoor
+                <br />
+                (Technical Trainer)
+              </p>
+            </div>
+            <div class="profileInfo">
+              <p class="cName">GLA University Mathura</p>
+              <br />
+              <a href="mailto:ankitkumarsharmacse@gmail.com" class="email">
+                <span>Email: </span>pankaj.kapoor@gla.ac.in</a
+              >
+            </div>
+            <div class="mentorPhoneContainer">
+              <span class="phoneNumber"><i class="fa fa-phone"></i></span>
+            </div>
+          </div>
+          <div class="mentorInfo" id="mentorinfo2">
+            <div class="imgContainer">
+              <img src="./Images/img3.jpg" alt="" class="mentorIcon" />
+            </div>
+            <div class="jobProfile">
+              <p class="jProfilePara">
+                Shabnam Sandhi
+                <br />
+                (Project Manager)
+              </p>
+            </div>
+            <div class="profileInfo">
+              <p class="cName">Amazon</p>
+              <br />
+              <a href="mailto:ankitkumarsharmacse@gmail.com" class="email"
+                ><span class="emailAddr">Email:</span
+                >shabnam.shandhi@gmail.com</a
+              >
+            </div>
+            <div class="mentorPhoneContainer">
+              <span class="phoneNumber"><i class="fa fa-phone"></i></span>
+            </div>
+          </div>
+          <div class="mentorInfo" id="mentorinfo3">
+            <div class="imgContainer">
+              <img src="./Images/img4.jpg" alt="" class="mentorIcon" />
+            </div>
+            <div class="jobProfile">
+              <p class="jProfilePara">
+                Madan Naik
+                <br />
+                (SDE-I)
+              </p>
+            </div>
+            <div class="profileInfo">
+              <p class="cName">Infosys</p>
+              <br />
+              <a href="mailto:ankitkumarsharmacse@gmail.com" class="email">
+                <span class="emailAddr">Email: </span>madan.naik@gmail.com</a
+              >
+            </div>
+            <div class="mentorPhoneContainer">
+              <span class="phoneNumber"><i class="fa fa-phone"></i></span>
+            </div>
+          </div>
+          <div class="mentorInfo" id="mentorinfo4">
+            <div class="imgContainer">
+              <img src="./Images/img2.jpg" alt="" class="mentorIcon" />
+            </div>
+            <div class="jobProfile">
+              <p class="jProfilePara">
+                Sneh Prajapati
+                <br />
+                (Software Engineer)
+              </p>
+            </div>
+            <div class="profileInfo">
+              <p class="cName">Microsoft</p>
+              <br />
+              <a href="mailto:ankitkumarsharmacse@gmail.com" class="email">
+                <span class="emailAddr">Email: </span
+                >sneh.prajapati@gmail.com</a
+              >
+            </div>
+            <div class="mentorPhoneContainer">
+              <span class="phoneNumber"><i class="fa fa-phone"></i></span>
+            </div>
+          </div>
+        </div>
+        <div class="titleContainer" id="fTitle">
+          <span class="title">Feedback</span>
+        </div>
+        <div class="suggestionContainer" id="feedback">
+          <div class="commentBox">
+            <form action="" id="commentForm">
+                <div class="commentTitle"><p>Add a comment</p></div>
+              <div class="nameComment">
+                <input type="text" id="name_nameComment" autocomplete="off" required>
+                <label for="name_nameComment">Name</label>
+              </div>
+              <div class="emailCommentContainer">
+                <input type="email" class="emailComment" id="emailComment" autocomplete="off" required/>
+                <label for="emailComment"
+                  >Mail(will not be published)</label
+                >
+              </div>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="100"
+                rows="10"
+              placeholder="What is your view?" class="textArea"></textarea>
+              <div class="commentButtonContainer">
+                <button class="commentButton">Cancel</button>
+                <button class="commentButton">Send</button>
+              </div>
+            </form>
+          </div>
+          <div class="ratingContainer"></div>
+        </div>
+        <div class="titleContainer"></div>
+        <div class="companyDrivesQuesContainer">
+          <div class="leftContainer"></div>
+          <div class="rightContainer"></div>
+        </div>
+        <div class="titleContainer">
+          <span class="title">Team</span>
+        </div>
+        <div class="profileContainer" id="contactTeam">
+          <div class="CreatorInfo">
+            <div class="creatorPictures">
+              <img src="./Images/ravi.png" alt="" class="creatorPhoto" />
+            </div>
+            <p class="creatorPos">Ankit Kumar Sharma</p>
+            <p class="creatorDesign">Developer</p>
+            <div class="creatorSocialMedia">
+              <span class="cSocialIcons"
+                ><i class="fa fa-instagram fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-linkedin fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-twitter fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-facebook fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-whatsapp fac"></i
+              ></span>
+            </div>
+            <div class="textInfo">
+              <span class="quoteContainer">
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p class="viewCreator">
+                Imgination is more powerful than knowledge.
+              </p>
+              <div class="creatorSocialMedia">
+                <span class="cSocialIcons"
+                  ><i class="fa fa-instagram fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-linkedin fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-twitter fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-facebook fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-whatsapp fac"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+          <div class="CreatorInfo">
+            <div class="creatorPictures">
+              <img src="./Images/me.png" alt="" class="creatorPhoto" />
+            </div>
+            <p class="creatorPos">Ravi Beniwal</p>
+            <p class="creatorDesign">Designer</p>
+            <div class="textInfo">
+              <span class="quoteContainer">
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p class="viewCreator">
+                Imgination is more powerful than knowledge.
+              </p>
+              <div class="creatorSocialMedia">
+                <span class="cSocialIcons"
+                  ><i class="fa fa-instagram fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-linkedin fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-twitter fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-facebook fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-whatsapp fac"></i
+                ></span>
+              </div>
+            </div>
+            <div class="creatorSocialMedia">
+              <span class="cSocialIcons"
+                ><i class="fa fa-instagram fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-linkedin fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-twitter fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-facebook fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-whatsapp fac"></i
+              ></span>
+            </div>
+          </div>
+          <div class="CreatorInfo">
+            <div class="creatorPictures">
+              <img src="./Images/kishore.png" alt="" class="creatorPhoto" />
+            </div>
+            <p class="creatorPos">Kishore Kant Tiwari</p>
+            <p class="creatorDesign">Developer</p>
+            <div class="textInfo">
+              <span class="quoteContainer">
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p class="viewCreator">
+                Imgination is more powerful than knowledge.
+              </p>
+              <div class="creatorSocialMedia">
+                <span class="cSocialIcons"
+                  ><i class="fa fa-instagram fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-linkedin fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-twitter fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-facebook fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-whatsapp fac"></i
+                ></span>
+              </div>
+            </div>
+            <div class="creatorSocialMedia">
+              <span class="cSocialIcons"
+                ><i class="fa fa-instagram fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-linkedin fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-twitter fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-facebook fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-whatsapp fac"></i
+              ></span>
+            </div>
+          </div>
+          <div class="CreatorInfo">
+            <div class="creatorPictures">
+              <img src="./Images/naman.png" alt="" class="creatorPhoto" />
+            </div>
+            <p class="creatorPos">Naman Sharma</p>
+            <p class="creatorDesign">Designer</p>
+            <div class="textInfo">
+              <span class="quoteContainer">
+                <i class="fa fa-quote-left"></i>
+              </span>
+              <p class="viewCreator">
+                Imgination is more powerful than knowledge.
+              </p>
+              <div class="creatorSocialMedia">
+                <span class="cSocialIcons"
+                  ><i class="fa fa-instagram fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-linkedin fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-twitter fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-facebook fac"></i
+                ></span>
+                <span class="cSocialIcons"
+                  ><i class="fa fa-whatsapp fac"></i
+                ></span>
+              </div>
+            </div>
+            <div class="creatorSocialMedia">
+              <span class="cSocialIcons"
+                ><i class="fa fa-instagram fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-linkedin fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-twitter fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-facebook fac"></i
+              ></span>
+              <span class="cSocialIcons"
+                ><i class="fa fa-whatsapp fac"></i
+              ></span>
+            </div>
+          </div>
+        </div>
+        <div class="titleContainer">
+          <span class="title">Support</span>
+        </div>
+        <div class="donation" id="donation">
+          <div class="Donate"></div>
+          <div class="subscribe">
+            <label for="sEmail" class="subText" id="subText"
+              >Subscribe Us</label
+            >
+            <input
+              type="email"
+              name="sEmail"
+              id="sEmail"
+              placeholder="Enter email address"
+              onmouseout="checkButton()"
+              autocomplete="off"
+              class="subscriberEmail"
+              required
+            />
+            <button class="subscribeBtn" id="subscribeBtn">Subscribe</button>
+          </div>
+        </div>
+        <div class="titleContainer">
+          <span class="title" id="footerTitle">Help</span>
+        </div>
+        <div class="footer" id="footer">
+          <div class="addressInfo">
+            <div class="siteInfo">
+              <img
+                src="./Images/graduation-hat.png"
+                alt=""
+                style="width: 60px; height: 57px"
+                id="footerLogo"
+              />
+              <p class="footerWebName">justdoprep</p>
+            </div>
+            <p class="addr">
+              <i class="fa fa-globe addrs"></i>5th floor, AB-18, <br />
+              Sector-136,Greator Noida, Uttar Pradesh-201305
+            </p>
+            <p class="addr">
+              <i class="fa fa-envelope addrs"></i>feedback@justdoprep.org
+            </p>
+            <p class="addr"><i class="fa fa-phone addrs"></i>+91-7452091852</p>
+            <div class="socialContainer2">
+              <a href="https://www.linkedin.com/" target="_blank" class="sLink"
+                ><i class="fa fa-linkedin-square addIcon"></i
+              ></a>
+              <a href="https://www.facebook.com/" target="_blank" class="sLink"
+                ><i class="fa fa-facebook-square addIcon"></i
+              ></a>
+              <a href="https://web.whatsapp.com/" target="_blank" class="sLink"
+                ><i class="fa fa-whatsapp addIcon" target="_blank"></i
+              ></a>
+              <a href="https://www.twitter.com/" target="_blank" class="sLink"
+                ><i class="fa fa-twitter addIcon"></i
+              ></a>
+              <a href="https://www.instagram.com/" target="_blank" class="sLink"
+                ><i class="fa fa-instagram addIcon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cInfoContainer">
+            <p style="font-size: 25px; margin-top: 40px">Company</p>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#contactTeam">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Copyright Policy</a></li>
+            </ul>
+          </div>
+          <div class="cInfoContainer">
+            <p style="font-size: 25px; margin-top: 40px">Learn</p>
+            <ul>
+              <li><a href="#">Algorithms</a></li>
+              <li><a href="#">Data Strucure</a></li>
+              <li><a href="#">Languages</a></li>
+              <li><a href="#">CS Subjects</a></li>
+              <li><a href="#">CS Notes</a></li>
+              <li><a href="#">Video Tutorials</a></li>
+            </ul>
+          </div>
+
+          <div class="cInfoContainer">
+            <p style="font-size: 25px; margin-top: 40px">Web Development</p>
+            <ul>
+              <li><a href="#">Html</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><a href="#">JQuery</a></li>
+              <li><a href="#">Web Tutorials</a></li>
+            </ul>
+          </div>
+
+          <div class="cInfoContainer" id="fContainer4">
+            <p style="font-size: 25px; margin-top: 40px">Contribute</p>
+            <ul>
+              <li><a href="#">Write an Artical</a></li>
+              <li><a href="#">Interview Experience</a></li>
+              <li><a href="#">Internship</a></li>
+              <li><a href="#">Video</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>@justdoprep, Some rights reserved.</span>
+        </div>
+      </div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
     <script src="./firebase/config.js"></script>
     <script src="./firebase/EmailData.js"></script>
     <script src="./JavaScript/myscript.js"></script>
-</body>
+  </body>
 </html>
