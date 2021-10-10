@@ -102,6 +102,11 @@ let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'
  creatorPhoto.forEach(element=>{
      element.style="top:20px";
  });
+ let phoneNumber=Array.from(document.getElementsByClassName('phoneNumber'));
+ phoneNumber.forEach(element=>
+    {
+        element.style="none";
+    });
 }
 else
 {
@@ -176,5 +181,10 @@ creatorPos.forEach(element => {
  creatorPhoto.forEach(element=>{
      element.style="top:0px";
  });
+ let phoneNumber=Array.from(document.getElementsByClassName('phoneNumber'));
+ phoneNumber.forEach(element=>
+    {
+        element.style="border:2px solid #6C63FF";
+    });
 }
 }
