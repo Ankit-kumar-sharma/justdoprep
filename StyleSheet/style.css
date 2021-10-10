@@ -479,29 +479,132 @@ border-left: 7px solid #bfbfbf;
   width: 60px;
   border-radius: 50%;
 }
+#fTitle
+{
+  align-items: flex-start;
+}
+/* border: 1px solid black; */
 .suggestionContainer {
-  height: 550px;
+  height: auto;
   width: 100%;
-  border: 1px solid var(--secondary-color);
+  /* border: 1px solid var(--secondary-color); */
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-image: url(../Images/suggestionBack.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  /* background-position: center;   */
+ }
+.commentButton
+{
+  cursor: pointer;
+  border: none;
+  color: var(--secondary-color);
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  width: 140px;
+  height: 40px;
+  font-size: 18px;
+  transition: transform .5s;
+}
+.commentButton:hover
+{
+  transform: scale(1.1);
+}
+.nameComment
+{
+  
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-bottom: 20px;
+}
+#commentForm
+{
+  /* border: 1px solid green; */
+  width: 78%;
+}
+.textArea
+{
+  border: 1px solid #bfbfbf;
+  outline: none;
+  width: 100%;
+  font-size: 18px;
+  color: black;
+  padding: 10px;
+  background: transparent;
+}
+#name_nameComment,.emailComment
+{
+  background: transparent;
+  backdrop-filter: blur(10px);
+  padding: 5px;
+  font-size: 18px;
+  outline: none;
+  height: 30px;
+  width: 250px;
+  margin-right: 10px;
+  border: none;
+  border-bottom:1px solid #bfbfbf;
+  transition: width 1s;
+}
+#name_nameComment:focus
+{
+  width: 350px;
+}
+.emailComment:hover
+{
+  width: 350px;
+}
+.textArea::placeholder
+{
+color: gray;
+font-size: 20px;
+}
+.emailCommentContainer
+{
+  height: auto;
+  display: flex;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+}
+.commentTitle
+{
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 23px;
+}
+.commentButtonContainer
+{
+  padding: 0px 5px;
+display: flex;
+justify-content:space-between;
+align-items: center;
+  margin-top: 20px;
+  height: 50px;
+  /* border: 1px solid black; */
 }
 .commentBox {
-  width: 40%;
-  height: 100%;
-  border: 1px solid var(--secondary-color);
-  background: transparent;
+  padding-left: 10px;
+  font-size: 20px;
+  /* padding: 10px; */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  /* text-align: left; */
+  width: 1000px;
+  height: 480px;
+  /* border: 1px solid var(--secondary-color); */
+  background: url(../Images/commentBack.svg);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position:right;
 }
 .ratingContainer {
   background: transparent;
-  width: 59%;
-  height: 100%;
+  width: 400px;
+  height: 480px;
   border: 1px solid var(--secondary-color);
 }
 .companyDrivesQuesContainer {
@@ -669,6 +772,26 @@ border-left: 7px solid #bfbfbf;
   background-size: 50%;
   background-position: center bottom;
 }
+.Donate:hover .dBtnContainer
+{
+  background-color: black;
+}
+.Donate:hover .dBtn
+{
+  color: white;
+}
+.dBtn
+{
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 22px;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+}
+
 input[type=email] {
   border: none;
   width:60%;
@@ -682,7 +805,7 @@ input[type=email] {
   transition: width 1s;
   margin-top: 10px;
 }
-input[type=email]:focus
+.subscriberEmail:focus
 {
   width: 90%;
 }
