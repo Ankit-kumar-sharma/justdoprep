@@ -772,6 +772,7 @@ align-items: center;
   background-size: 50%;
   background-position: center bottom;
 }
+
 .Donate:hover .dBtnContainer
 {
   background-color: black;
