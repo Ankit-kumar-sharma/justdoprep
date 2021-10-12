@@ -1,3 +1,97 @@
+showComments();
+let userName=document.getElementById('nameCommentor');
+let publish=document.getElementById('publishButton');
+document.getElementById('cancelBtn').onclick=function()
+{
+    //alert("Hello");
+    let commentText=document.getElementById('comment');
+    commentText.value="";
+    userName.value="";
+}
+publish.addEventListener('click',function(e)
+{
+    let userName=document.getElementById('nameCommentor');
+    let commentText=document.getElementById('comment');
+    let comments=localStorage.getItem("comments");
+    if(comments==null)
+    {
+        commentsArray=[];
+    }
+    else
+    {
+        commentsArray=JSON.parse(comments);
+    }
+    if(commentText.value.length!=0)
+    {
+        let myObj={
+            userName:userName.value,
+            text:commentText.value,
+        };
+        commentsArray.push(myObj);
+        localStorage.setItem("comments",JSON.stringify(commentsArray));
+        commentText.value="";
+        userName.value="";
+        console.log(commentsArray);
+        showComments();
+    }
+    
+});
+function showComments()
+{
+    let comments=localStorage.getItem("comments");
+    if(comments==null)
+    {
+        commentsArray=[];
+    }
+    else
+    {
+        commentsArray=JSON.parse(comments);
+    }
+    let html="";
+    commentsArray.forEach(function(element,index)
+    {
+        console.log(element);
+        html+=`
+        <div class="userComment">
+        <div><p class="commentDUser">User name: ${element.userName}</p></div>
+        <p id="dPara">${element.text}</p>
+        <button onclick="deleteComments(this.id)" id="${index}" class="deleteComment">Delete Comment</button>
+        </div>
+        `;
+    });
+    let commentsElement=document.getElementById('Comments');
+    if(commentsArray.length!=0)
+    {
+        commentsElement.innerHTML=html;
+    }
+    else
+    {
+        commentsElement.innerHTML=`Comments are no longer available ! Use "Add a comment" section above to add comments`;
+    }
+}
+
+function deleteComments(index)
+{
+ console.log(index);
+ let comments=localStorage.getItem("comments");
+ if(comments==null)
+ {
+     commentsArray=[];
+ }
+ else
+ {
+     commentsArray=JSON.parse(comments);
+ }
+ commentsArray.splice(index,1);
+ localStorage.setItem("comments",JSON.stringify(commentsArray));
+ showComments();
+
+}
+
+
+
+
+
 
 
 // console.log(scrollY);

@@ -203,9 +203,29 @@
                        </div>
                 </div>
             </div>
-            <div class="titleContainer"></div>
+            <div class="titleContainer">
+                <span class="title">Feedback</span>
+            </div>
             <div class="suggestionContainer">
-                <div class="commentBox"></div>
+                <div class="commentBox">
+                    <p class="commentTitle">Add a comment</p>
+                    <br>
+                    <div class="userNameContainer">
+                        <label for="nameCommentor">Username</label>
+                        <input type="text" id="nameCommentor" class="nameCommentor">
+                    </div>
+                   <div class="commentContainer">
+                       <textarea name="comment" id="comment" cols="80" rows="15" placeholder="What is your view?"></textarea>
+                   </div>
+                   <div class="commentBtnContainer">
+                       <button class="commentButton" id="cancelBtn">Cancel</button>
+                       <button class="commentButton" id="publishButton">Publish</button>
+                   </div>
+                   <p style="font-size: 30px; margin-bottom: 20px;">Published Comments</p>
+                  <div id="Comments">
+
+                  </div>
+                </div>
                 <div class="ratingContainer"></div>
             </div>
             <div class="titleContainer"></div>
@@ -331,14 +351,11 @@
             </div>
             <div class="donation" id="donation">
                 <div class="Donate">
-                   
                 </div>
                 <div class="subscribe">
-                    
                     <label for="sEmail" class="subText" id="subText">Subscribe Us</label>
                     <input type="email" name="sEmail" id="sEmail" placeholder="Enter email address" onmouseout="checkButton()" autocomplete="off" class="subscriberEmail"required>
                     <button class="subscribeBtn" id="subscribeBtn">Subscribe</button>
-           
                 </div>
             </div>
             <div class="titleContainer" ><span class="title" id="footerTitle">Help</span></div>
@@ -412,10 +429,10 @@
             </div>
         </div>
     </div>
+    <script src="./JavaScript/payment.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
     <script src="./firebase/config.js"></script>
     <script src="./firebase/EmailData.js"></script>
     <script src="./JavaScript/myscript.js"></script>
-
 </body>
 </html>
