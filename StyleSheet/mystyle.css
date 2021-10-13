@@ -1040,6 +1040,7 @@ color: black;
 }
 .readMoreSpan a
 {
+  border-radius: 0px;
   cursor: pointer;
   overflow: hidden;
   position: relative;
@@ -1056,11 +1057,11 @@ height: 50px;
 {
   z-index: -2;
   content: '';
-  background-color: black;
+  background-color: #6C63FF;
   width: 20px;
   height: 250px;
   position: absolute;
-  animation: rotate 2s infinite linear;
+  animation: rotate 3s infinite ease-out;
 }
 .readMoreSpan a::after
 {
