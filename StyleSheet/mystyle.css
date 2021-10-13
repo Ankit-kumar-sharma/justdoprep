@@ -1033,7 +1033,41 @@ padding: 10px;
   /* height: 480px; */
   /* border: 1px solid var(--secondary-color); */
 }
+.aboutDesc
+{
+color: black;
+}
+.rMore
+{
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  background-color: black;
+}
+.aboutUS
+{
+  background: url(../Images/aboutUSImg.svg);
+  background-size: 29%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding: 20px;
+  font-size: 20px;
+  /* padding: 80px; */
+  text-align: center;
+  width: 100%;
+  min-height: 480px;
+  height: auto;
+  /* border: 1px solid var(--secondary-color); */
+}
 @media (max-width: 800px) {
+  .aboutUS
+  {
+    background: none;
+  }
   .profileContainer
   {
     justify-content: space-evenly;
