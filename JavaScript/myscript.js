@@ -53,7 +53,7 @@ function showComments()
         console.log(element);
         html+=`
         <div class="userComment">
-        <div><p class="commentDUser">User name: ${element.userName}</p></div>
+        <div><p class="commentDUser"><i class="fa fa-user-circle" style="margin-right:5px"></i>${element.userName}</p></div>
         <p id="dPara">${element.text}</p>
         <button onclick="deleteComments(this.id)" id="${index}" class="deleteComment">Delete Comment</button>
         </div>

@@ -548,7 +548,7 @@ padding: 10px;
  {
   /* overflow: hidden; */
    padding: 10px;
-   width: 75%;
+   width: 95%;
    min-height: 200px;
    height: auto;
    margin: auto;
@@ -584,7 +584,7 @@ padding: 10px;
  .userNameContainer
  {
    border: 1px solid #bfbfbf;
-   max-width: 75%;
+   max-width: 95%;
    margin: auto;
    height: 60px;
    display: flex;
@@ -594,7 +594,7 @@ padding: 10px;
  }
  .commentContainer
  {
-   max-width: 75%;
+   max-width: 95%;
    margin: auto;
    margin-bottom: 20px;
    margin-top:20px;
@@ -624,6 +624,11 @@ padding: 10px;
    height: 30px;
    margin-left: 10px;
    border: 1px solid #aaaa;
+   transition: width 2s;
+ }
+ .nameCommentor:focus
+ {
+   width:470px;
  }
  #comment::placeholder
  {
@@ -632,7 +637,7 @@ padding: 10px;
  .commentBtnContainer
  {
    /* border:1px solid black; */
-   max-width: 75%;
+   max-width: 95%;
    margin: auto;
    display: flex;
    justify-content: space-between;
@@ -998,7 +1003,8 @@ padding: 10px;
   /* color: var(--secondary-color); */
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+
   .commentBox
   {
     padding: 0px;
@@ -1016,7 +1022,13 @@ padding: 10px;
     margin-top: 10px;
     width: 90%;
     margin-bottom: 20px;
+    transition: none;
   }
+  .nameCommentor:focus
+  {
+    width: 90%;
+  }
+  
   .commentContainer
   {
     max-width: 100%;
