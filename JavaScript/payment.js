@@ -32,8 +32,7 @@ rzp1.on('payment.failed', function (response){
         alert(response.error.metadata.order_id);
         alert(response.error.metadata.payment_id);
 });
-function rPayment(e){
-    // alert("Hello");
+document.getElementById('rzp-button1').onclick = function(e){
     rzp1.open();
     e.preventDefault();
 }

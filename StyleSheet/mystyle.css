@@ -645,7 +645,7 @@ padding: 10px;
  }
 
 .ratingContainer {
-  background: transparent;
+  background: black;
   width: 400px;
   height: 480px;
   border: 1px solid var(--secondary-color);
@@ -806,9 +806,36 @@ padding: 10px;
   margin: auto;
   margin-top: 20px;
 }
+.clickMe
+{
+  bottom: 30px;
+  left: 330px;
+  position: absolute;
+  cursor: pointer;
+  width: 120px;
+  border-radius: 20px;
+  /* position: relative;
+  left: 90px;
+  top: -10px; */
+  height: 35px;
+  border: none;
+  background-color: black;
+  backdrop-filter: blur(5px);
+  font-size: 20px;
+  color: white;
+  transition: transform .5s;
+}
+.clickMe:hover
+{
+  transform: scale(1.1);
+}
 .Donate {
+  position: relative;
   width: 967px;
   height: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   border-right: 1px solid #bfbfbf;
   background: url(../Images/supportMoney.svg);
   background-repeat: no-repeat;
@@ -1004,7 +1031,16 @@ padding: 10px;
 }
 
 @media (max-width: 800px) {
-
+.Donate
+{
+  background-position: center;
+  height: 600px;
+}
+.clickMe
+{
+ left: 50%;
+ transform: translateX(-50%);
+}
   .commentBox
   {
     padding: 0px;
