@@ -295,7 +295,7 @@ border-left: 7px solid #bfbfbf;
   /* border: 1px solid var(--secondary-color); */
   margin: 5px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -390,7 +390,7 @@ border-left: 7px solid #bfbfbf;
   /* border: 1px solid var(--secondary-color); */
   margin: 0px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content:space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -675,7 +675,7 @@ padding: 10px;
   height: auto;
   /* border: 1px solid var(--secondary-color); */
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -823,12 +823,9 @@ padding: 10px;
   backdrop-filter: blur(5px);
   font-size: 20px;
   color: white;
-  transition: transform .5s;
+ 
 }
-.clickMe:hover
-{
-  transform: scale(1.1);
-}
+
 .Donate {
   position: relative;
   width: 967px;
@@ -1029,8 +1026,26 @@ padding: 10px;
   /* background-color: var(--primary-color); */
   /* color: var(--secondary-color); */
 }
-
+.practice
+{
+  width: 100%;
+  height: 600px;
+  /* height: 480px; */
+  /* border: 1px solid var(--secondary-color); */
+}
 @media (max-width: 800px) {
+  .profileContainer
+  {
+    justify-content: space-evenly;
+  }
+  .courseContainer
+  {
+    justify-content: space-evenly;
+  }
+  .mentorContainer
+  {
+    justify-content: space-evenly;
+  }
 .Donate
 {
   background-position: center;
@@ -1038,10 +1053,19 @@ padding: 10px;
 }
 .clickMe
 {
+  width: 250px;
+  height: 48px;
+  border-radius: 2px;
  left: 50%;
  transform: translateX(-50%);
 }
-  .commentBox
+.subscribeBtn
+{
+width: 250px;
+height: 48px;
+}
+
+ .commentBox
   {
     padding: 0px;
     width: 100%;

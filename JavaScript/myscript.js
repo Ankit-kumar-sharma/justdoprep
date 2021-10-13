@@ -201,9 +201,12 @@ let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'
     {
         element.style="none";
     });
+    document.getElementById('commentTitle').style="color:black;";
+    document.getElementById('publishComm').style="color:black; font-size:30px; margin-bottom:20px";
 }
 else
 {
+    document.getElementById('commentTitle').style="color:white;";
     document.getElementById('slider').style="background-color:black";
     document.getElementById('body').style="background-color:black;";
     document.getElementById('container').style="background-color:black;";
@@ -270,7 +273,13 @@ creatorPos.forEach(element => {
  let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'));
  creatorPictures.forEach(element=>{
      element.style="height:165px";
- });   
+ });
+ document.getElementById('rzp-button1').style="border:1px solid white;";
+ let scButton=Array.from(document.getElementsByClassName('commentButton'));
+ scButton.forEach(e=>{
+    e.style.border="1px solid white";
+ });  
+ document.getElementById('publishComm').style="color:white; font-size:30px; margin-bottom:20px";
  let creatorPhoto=Array.from(document.getElementsByClassName('creatorPhoto'));
  creatorPhoto.forEach(element=>{
      element.style="top:0px";

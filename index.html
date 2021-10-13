@@ -27,7 +27,7 @@
                     <li><a href="#courses"><i class="fa fa-book fas"></i><span>Courses</span></a></li>
                     <li><a href="#"><i class="fa fa-code fas"></i><span>Questions</span></a></li>
                     <li><a href="#"><i class="fa fa-users fas"></i><span>Services</span></a></li>
-                    <li><a href="#"><i class="fa fa-codepen fas"></i><span>Practice</span></a></li>
+                    <li><a href="#practice"><i class="fa fa-codepen fas"></i><span>Practice</span></a></li>
                     <li><a href="#feedback"><i class="fa fa-comment-o fas"></i><span>Feedback</span></a></li>
                     <li><a href="#"><i class="fa fa-gamepad fas"></i><span>Problems</span></a></li>
                     <li><a href="#mentor"><i class="fa fa-black-tie fas"></i><span>Mentor</span></a></li>
@@ -208,7 +208,7 @@
             </div>
             <div class="suggestionContainer" id="feedback">
                 <div class="commentBox">
-                    <p class="commentTitle">Add a comment</p>
+                    <p class="commentTitle" id="commentTitle">Add a comment</p>
                     <br>
                     <div class="userNameContainer">
                         <label for="nameCommentor">Username</label>
@@ -221,7 +221,7 @@
                        <button class="commentButton" id="cancelBtn">Cancel</button>
                        <button class="commentButton" id="publishButton">Publish</button>
                    </div>
-                   <p style="font-size: 30px; margin-bottom: 20px;">Published Comments</p>
+                   <p style="font-size: 30px; margin-bottom: 20px;" id="publishComm">Published Comments</p>
                   <div id="Comments">
 
                   </div>
@@ -230,10 +230,16 @@
                    
                 </div>
             </div>
-            <div class="titleContainer"></div>
+            <div class="titleContainer">
+                <span class="title">Company</span>
+            </div>
             <div class="companyDrivesQuesContainer">
                 <div class="leftContainer"></div>
                 <div class="rightContainer"></div>
+            </div>
+            <div class="titleContainer"><span class="title">Practice</span></div>
+            <div class="practice" id="practice">
+                <iframe src="https://codepen.io/Mamboleoo/pen/XWJPxpZ" frameborder="0" height="100%" width="100%"></iframe> 
             </div>
             <div class="titleContainer">
                 <span class="title">Our Team</span>
