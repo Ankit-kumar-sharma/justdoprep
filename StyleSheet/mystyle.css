@@ -1038,7 +1038,50 @@ padding: 10px;
 {
 color: black;
 }
-.rMore
+.readMoreSpan a
+{
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+margin-top: 40px;
+width: 180px;
+height: 50px;
+/* border: 1px solid gray; */
+}
+.readMoreSpan a::before
+{
+  z-index: -2;
+  content: '';
+  background-color: black;
+  width: 20px;
+  height: 250px;
+  position: absolute;
+  animation: rotate 2s infinite linear;
+}
+.readMoreSpan a::after
+{
+  position: absolute;
+  content: '';
+  inset: 2px;
+  background-color: white;
+  z-index: -1;
+}
+@keyframes rotate {
+  0%
+  {
+    transform: rotate(0deg);
+  }
+  100%
+  {
+    transform: rotate(360deg);
+  }
+  
+}
+/* .rMore
 {
   cursor: pointer;
   width: 150px;
@@ -1048,7 +1091,7 @@ color: black;
   font-size: 20px;
   margin-top: 50px;
   background-color: black;
-}
+} */
 .aboutUS
 {
   background: url(../Images/aboutUSImg.svg);
@@ -1067,6 +1110,7 @@ color: black;
 @media (max-width: 800px) {
   .aboutUS
   {
+    height: 600px;
     background: none;
   }
   .profileContainer

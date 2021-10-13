@@ -209,7 +209,6 @@ else
 {
 
     document.getElementById('commentTitle').style="color:white;";
-    document.getElementById('rMore').style="border:1px solid white";
     document.getElementById('aboutDesc').style="color:white;";
     document.getElementById('slider').style="background-color:black";
     document.getElementById('body').style="background-color:black;";
