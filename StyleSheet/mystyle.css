@@ -43,6 +43,7 @@ html {
   /* color: var(--secondary-color); */
 }
 .logoName {
+  text-decoration: none;
   font-family: "Poiret One", cursive;
   font-weight: 500;
   cursor: pointer;
