@@ -203,10 +203,14 @@ let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'
     });
     document.getElementById('commentTitle').style="color:black;";
     document.getElementById('publishComm').style="color:black; font-size:30px; margin-bottom:20px";
+    document.getElementById('aboutDesc').style="color:black;";
 }
 else
 {
+
     document.getElementById('commentTitle').style="color:white;";
+    document.getElementById('rMore').style="border:1px solid white";
+    document.getElementById('aboutDesc').style="color:white;";
     document.getElementById('slider').style="background-color:black";
     document.getElementById('body').style="background-color:black;";
     document.getElementById('container').style="background-color:black;";
