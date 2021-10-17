@@ -653,7 +653,7 @@ padding: 10px;
 }
 .ratingName,.ratingEmail
 {
-  
+  background-color: transparent;
   position: relative;
   height: 80px;
   margin: auto;
@@ -704,6 +704,7 @@ padding: 10px;
 }
 .message
 {
+  background-color: transparent;
   outline: none;
   padding: 10px;
   font-size: 19px;
@@ -711,19 +712,30 @@ padding: 10px;
   height: 200px;
   border: 1px solid #bfbfbf;
 }
+.ContactForce
+{
+  color: red;
+}
 .contactForm
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+ 
   width: 100%;
   height: 70px;
+  /* color: black; */
   /* border: 1px solid black; */
+}
+.contactForm p
+{
+  font-size: 25px;
+  color: black;
 }
 .mName,.emName
 {
   
+  background-color: transparent;
   /* pointer-events: none; */
   outline: none;
   font-size: 20px;
@@ -741,11 +753,18 @@ padding: 10px;
   font-size: 18px;
   color:var(--secondary-color);
 }
-.emName:focus+.emNameLabel,.emName:valid+.emNameLabel
+.emName:focus+.emNameLabel
 {
   top: 0px;
   font-size: 18px;
   color:var(--secondary-color);
+}
+.emName:valid+.emNameLabel
+{
+  top: 0px;
+  font-size: 18px;
+  color:var(--secondary-color);
+
 }
 .companyDrivesQuesContainer {
   display: flex;
@@ -1205,6 +1224,11 @@ height: 50px;
   /* border: 1px solid var(--secondary-color); */
 }
 @media (max-width: 800px) {
+  .ratingContainer
+  {
+    margin-top: 100px;
+    margin-bottom:100px;
+  }
   .aboutUS
   {
     height: 600px;
