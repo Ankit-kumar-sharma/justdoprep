@@ -204,6 +204,7 @@ let creatorPictures=Array.from(document.getElementsByClassName('creatorPictures'
     document.getElementById('commentTitle').style="color:black;";
     document.getElementById('publishComm').style="color:black; font-size:30px; margin-bottom:20px";
     document.getElementById('aboutDesc').style="color:black;";
+    document.getElementById('rMore').style="color:black; border:1px solid black;";
 }
 else
 {
@@ -292,5 +293,6 @@ creatorPos.forEach(element => {
     {
         element.style="border:2px solid #6C63FF";
     });
+    document.getElementById("rMore").style="color:white; border:1px solid white;"
 }
 }

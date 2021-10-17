@@ -491,7 +491,7 @@ border-left: 7px solid #bfbfbf;
   /* border: 1px solid var(--secondary-color); */
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
  }
@@ -527,7 +527,7 @@ border-left: 7px solid #bfbfbf;
   /* border: 1px solid black; */
   margin-bottom: 10px;
   text-align: center;
-  font-size: 23px;
+  font-size: 25px;
 }
 
 .commentBox {
@@ -646,10 +646,106 @@ padding: 10px;
  }
 
 .ratingContainer {
-  background: black;
+  /* background: black; */
   width: 400px;
-  height: 480px;
-  border: 1px solid var(--secondary-color);
+  height: auto;
+  /* border: 1px solid var(--secondary-color); */
+}
+.ratingName,.ratingEmail
+{
+  
+  position: relative;
+  height: 80px;
+  margin: auto;
+  margin-top: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  /* border: 1px solid black; */
+}
+.mNameLabel,.emNameLabel
+{
+  color: gray;
+  font-size: 20px;
+  margin-left: 10px;
+  position: absolute;
+  top: 23px;
+  transition: all .3s ease-in-out;
+}
+.mSubmitBtn
+{
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  display:block;
+  margin: auto;
+  width: 95%;
+  font-size: 20px;
+  height: 45px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+.messageContain
+{
+  padding: 10px;
+  width:100%;
+  height: auto;
+  /* border: 1px solid black; */
+}
+.messageLabel
+{
+  color: black;
+  display: block;
+  font-size:20px;
+  margin-bottom: 10px;
+}
+.message
+{
+  outline: none;
+  padding: 10px;
+  font-size: 19px;
+  width: 100%;
+  height: 200px;
+  border: 1px solid #bfbfbf;
+}
+.contactForm
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  width: 100%;
+  height: 70px;
+  /* border: 1px solid black; */
+}
+.mName,.emName
+{
+  
+  /* pointer-events: none; */
+  outline: none;
+  font-size: 20px;
+  /* padding: 10px; */
+  height: 35px;
+  width: 95%;
+  margin: auto;
+  border: none;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.mName:focus+.mNameLabel,.mName:valid+.mNameLabel
+{
+  top: 0px;
+  font-size: 18px;
+  color:var(--secondary-color);
+}
+.emName:focus+.emNameLabel,.emName:valid+.emNameLabel
+{
+  top: 0px;
+  font-size: 18px;
+  color:var(--secondary-color);
 }
 .companyDrivesQuesContainer {
   display: flex;
