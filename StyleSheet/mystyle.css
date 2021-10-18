@@ -497,6 +497,7 @@ border-left: 7px solid #bfbfbf;
  }
 .commentButton
 {
+  border-radius: 2px;
   cursor: pointer;
   border: none;
   color: var(--secondary-color);
@@ -504,9 +505,9 @@ border-left: 7px solid #bfbfbf;
   border: 1px solid black;
   /* font-family: 'Times New Roman', Times, serif; */
   color: white;
-  width: 90px;
+  width: 180px;
   height: 40px;
-  font-size: 16px;
+  font-size: 18px;
   transition: transform .5s;
 }
 .commentButton:hover
@@ -547,6 +548,7 @@ padding: 10px;
  }
  .userComment
  {
+   border-radius: 5px; 
   /* overflow: hidden; */
    padding: 10px;
    width: 95%;
@@ -560,7 +562,7 @@ padding: 10px;
    /* flex-direction: column; */
    /* justify-content: center; */
    /* align-items: center; */
-   border: 1px solid #bfbfbf;
+   border: 1px solid rgba(0, 0, 0, 0.1);
  }
  #dPara
  {
@@ -581,10 +583,11 @@ padding: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 18px;
+  border-radius: 2px;
 }
  .userNameContainer
  {
-   border: 1px solid #bfbfbf;
+   border: 1px solid rgba(0, 0, 0, 0.1);
    max-width: 95%;
    margin: auto;
    height: 60px;
@@ -601,7 +604,8 @@ padding: 10px;
    margin-top:20px;
    padding: 10px;
    background-color: whitesmoke;
-   border: 1px solid #bfbfbf;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 20px 80px 20px 80px;
  }
  .commentTitle
  {
@@ -609,12 +613,14 @@ padding: 10px;
  }
  #comment
  {
+  border-radius: 20px 80px 20px 80px;
    outline: none;
    max-width: 70%;
    max-height: 240px;
    padding: 10px;
+   padding-right: 40px;
    font-size: 18px;
-   border: 1px solid #aaaa;
+   border: 1px solid rgba(0, 0, 0, 0.1);
  }
  .nameCommentor
  {
@@ -624,7 +630,7 @@ padding: 10px;
    width: 250px;
    height: 30px;
    margin-left: 10px;
-   border: 1px solid #aaaa;
+   border: 1px solid rgba(0, 0, 0, 0.1);
    transition: width 2s;
  }
  .nameCommentor:focus
@@ -1223,6 +1229,22 @@ height: 50px;
   height: auto;
   /* border: 1px solid var(--secondary-color); */
 }
+@media  (max-width:1300px) {
+  .courseContainer
+  {
+    justify-content: space-evenly;
+    /* background-color: blue; */
+  }
+  .mentorContainer
+  {
+    justify-content: space-evenly;
+  }
+  .donation
+  {
+    justify-content: space-evenly;
+  }
+  
+}
 @media (max-width: 800px) {
   .ratingContainer
   {
@@ -1236,15 +1258,15 @@ height: 50px;
   }
   .profileContainer
   {
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .courseContainer
   {
-    justify-content: space-evenly;
+    justify-content:center;
   }
   .mentorContainer
   {
-    justify-content: space-evenly;
+    justify-content: center;
   }
 .Donate
 {
