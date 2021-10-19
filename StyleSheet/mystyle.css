@@ -288,7 +288,13 @@ border-left: 7px solid #bfbfbf;
   align-items: center;
 }
 .title {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  width:auto;
+  height:auto;
   font-size: 35px;
+  /* border: 1px solid black; */
 }
 .courseContainer {
   width: 97%;
@@ -505,9 +511,10 @@ border-left: 7px solid #bfbfbf;
   border: 1px solid black;
   /* font-family: 'Times New Roman', Times, serif; */
   color: white;
-  width: 180px;
+  width: 120px;
   height: 40px;
   font-size: 18px;
+  border-radius: 20px;
   transition: transform .5s;
 }
 .commentButton:hover
@@ -545,6 +552,8 @@ padding: 10px;
    font-size: 23px;
    margin-bottom: 20px;
    margin-top: 20px;
+   padding-bottom: 8px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
  }
  .userComment
  {
@@ -579,11 +588,11 @@ padding: 10px;
   background-color: black;
   color: white;
   height: 40px;
-  width: 180px;
+  width: 120px;
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 18px;
-  border-radius: 2px;
+  border-radius: 20px;
 }
  .userNameContainer
  {
@@ -1229,7 +1238,53 @@ height: 50px;
   height: auto;
   /* border: 1px solid var(--secondary-color); */
 }
+.services
+{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 480px;
+  /* border: 1px solid black; */
+}
+.servicesImage
+{
+  background-image: url(../Images/services2.svg);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 550px;
+  height: 480px;
+  /* border: 1px solid black; */
+}
+.servicesContent
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 780px;
+  height: 480px;
+  /* border: 1px solid black; */
+}
+.moto
+{
+  font-size: 30px;
+}
 @media  (max-width:1300px) {
+  .services
+  {
+    height: auto;
+  }
+  .servicesImage
+  {
+    width: 100%;
+  }
+  .servicesContent
+  {
+    width: 100%;
+  }
+
   .courseContainer
   {
     justify-content: space-evenly;
@@ -1246,6 +1301,21 @@ height: 50px;
   
 }
 @media (max-width: 800px) {
+  .services
+  {
+    height: auto;
+  }
+  .servicesImage
+  {
+    background-size: contain;
+    height: 280px;
+    width: 100%;
+  }
+  .servicesContent
+  {
+    height: 480px;
+    width: 100%;
+  }
   .ratingContainer
   {
     margin-top: 100px;
