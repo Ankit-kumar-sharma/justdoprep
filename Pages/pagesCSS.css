@@ -44,7 +44,7 @@ header {
 .container
 {
   background:url(./frontendBackG.svg);
-  background-size: 30%;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
     margin-top: 5px;
