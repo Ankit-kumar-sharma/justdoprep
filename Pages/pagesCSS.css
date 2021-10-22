@@ -11,15 +11,14 @@
 }
 header {
   z-index: 3;
-    position: fixed;
-    top: 0px;
+  position: fixed;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 70px;
   background-color: var(--secondary-color);
-
 }
 .logo {
   height: 57px;
@@ -28,61 +27,54 @@ header {
   cursor: pointer;
 }
 
-.titleContainer
-{
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 60px;
-    /* border: 1px solid black; */
+.titleContainer {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  /* border: 1px solid black; */
 }
-.title{
-    font-size: 30px;
+.title {
+  font-size: 30px;
 }
-.container
-{
-  background:url(./frontendBackG.svg);
+.container {
+  background: url(./frontendBackG.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom center;
-    margin-top: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    height: auto;
-    /* border: 1px solid black; */
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  /* border: 1px solid black; */
 }
-.frontendTechnologies
-{
+.frontendTechnologies {
   background-color: transparent;
-    padding-top: 50px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    margin-right: 5px;
-    width: 330px;
-    height: 480px;
-    /* border:1px solid black; */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+  padding-top: 50px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 5px;
+  width: 330px;
+  height: 480px;
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 }
-.frontendTechnologies p
-{
+.frontendTechnologies p {
   color: blue;
   font-size: 35px;
-
 }
-.btnContainer
-{
+.btnContainer {
   margin-top: 30px;
 }
-.frontendTechnologies button
-{
+.frontendTechnologies button {
   position: relative;
   cursor: pointer;
   width: 180px;
@@ -95,8 +87,7 @@ header {
   /* border: 1px solid black; */
   /* z-index: 2; */
 }
-button
-{
+button {
   overflow: hidden;
   z-index: 0;
   text-align: center;
@@ -104,64 +95,53 @@ button
   justify-content: center;
   display: flex;
 }
-button:hover
-{
+button:hover {
   box-shadow: 0px 0px 10px blue;
   color: white;
   background-color: blue;
 }
-button:hover::after
-{
+button:hover::after {
   /* animation: none; */
   display: none;
 }
-button:hover::before
-{
+button:hover::before {
   background-color: blue;
-  
 }
 
-button::before
-{
-position: absolute;
-content: '';
-inset: 2px;
-z-index: -1;
-background-color: white;
+button::before {
+  position: absolute;
+  content: "";
+  inset: 2px;
+  z-index: -1;
+  background-color: white;
 }
-button::after
-{
+button::after {
   z-index: -2;
-  content: '';
+  content: "";
   position: absolute;
   height: 200px;
   width: 20px;
-  background-image: linear-gradient(to bottom,blue 50%,black 50%);
+  background-image: linear-gradient(to bottom, blue 50%, black 50%);
   animation: rotate 2s infinite linear;
 }
 @keyframes rotate {
-  0%
-  {
+  0% {
     transform: rotate(0deg);
   }
-  100%
-  {
+  100% {
     transform: rotate(360deg);
   }
-  
 }
-footer
-{
-    display: flex;
-    justify-content:center;
-    align-items: flex-end;
-    color: var(--primary-color);
-    width: 100%;
-    height: 250px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    background-image: url(../Images/allrightsback.svg);
-    /* background-color: var(--secondary-color); */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: var(--primary-color);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-image: url(../Images/allrightsback.svg);
+  /* background-color: var(--secondary-color); */
 }
-
