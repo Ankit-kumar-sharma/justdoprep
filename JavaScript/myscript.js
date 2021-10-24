@@ -201,7 +201,17 @@ function changeMode() {
       fLabel.forEach(e=>{
           e.style="color:black";
       });
-  } else {
+      let phoneLink=document.getElementsByClassName('phoneLink');
+      for(let i=0; i<phoneLink.length; i++)
+      {
+        phoneLink[i].style="color:white";
+      }
+     } else {
+    let phoneLink=document.getElementsByClassName('phoneLink');
+    for(let i=0; i<phoneLink.length; i++)
+    {
+      phoneLink[i].style="color:white";
+    }
     document.getElementById("commentTitle").style = "color:white;";
     document.getElementById("aboutDesc").style = "color:white;";
     document.getElementById("slider").style = "background-color:black";
