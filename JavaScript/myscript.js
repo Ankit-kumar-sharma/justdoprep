@@ -1,3 +1,30 @@
+let displayContent=document.getElementById('container');
+displayContent.style="display:none;";
+// var myVar;
+function myLoaderFunctionality()
+{
+  setTimeout(showPage, 2000);
+
+}
+function showPage() {
+  document.getElementById("loaderContainer").style.display = "none";
+  displayContent.style="display:block;";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 showComments();
 let userName = document.getElementById("nameCommentor");
 let publish = document.getElementById("publishButton");
