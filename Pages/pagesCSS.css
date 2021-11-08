@@ -101,6 +101,7 @@ button:hover {
   color: white;
   background-color: blue;
 }
+
 button:hover::after {
   /* animation: none; */
   display: none;
@@ -108,7 +109,15 @@ button:hover::after {
 button:hover::before {
   background-color: blue;
 }
-
+button a
+{
+  text-decoration: none;
+  color: black;
+}
+button:hover a
+{
+  color: white;
+}
 button::before {
   position: absolute;
   content: "";
@@ -147,6 +156,7 @@ footer {
   background-image: url(../Images/allrightsback.svg);
   /* background-color: var(--secondary-color); */
 }
+
 @media screen and (max-width:768px) {
   .frontendTechnologies
   {

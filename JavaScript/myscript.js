@@ -190,7 +190,7 @@ function changeMode() {
       "color:black; font-size:30px; margin-bottom:20px";
     document.getElementById("aboutDesc").style = "color:black;";
     document.getElementById("rMore").style =
-      "color:black; border:1px solid black;";
+      "color:black; border:1px solid black; animation:none";
     document.getElementsByClassName("mSubmitBtn")[0].style =
       "border:none;border-radius:2px";
       document.getElementById('ContactR').style="color:black";
@@ -315,7 +315,7 @@ function changeMode() {
       element.style = "border:2px solid #6C63FF";
     });
     document.getElementById("rMore").style =
-      "color:white; border:1px solid white;";
+      "color:white; border:1px solid white; animation:none;";
       document.getElementById("mName").style = "color:white";
       document.getElementById("emName").style = "color:white";
       document.getElementsByClassName("mSubmitBtn")[0].style =
