@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+:root {
+  --primary-color: white;
+  --secondary-color: black;
+}
+header {
+  z-index: 3;
+  position: fixed;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  background-color: var(--secondary-color);
+}
+.logo {
+  height: 57px;
+  width: 60px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+main {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding-top: 20px;
+  margin-top: 70px;
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  background-image: url(./fullStack.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 49%;
+}
+footer {
+    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid black; */
+}
+footer a 
+{
+    border-radius: 13px 8px 13px 8px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 45px;
+    width: 250px;
+    border: 1px solid #1358DB;
+}
+footer a:hover
+{
+    color: white;
+    background-color: #1358DB;
+}
+@media screen and (max-width: 700px) {
+  main {
+    background-position: center;
+    background-size: 100%;
+  }
+}
