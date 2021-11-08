@@ -97,7 +97,7 @@ button {
   display: flex;
 }
 button:hover {
-  box-shadow: 0px 0px 10px blue;
+  /* box-shadow: 0px 0px 10px blue; */
   color: white;
   background-color: blue;
 }
@@ -146,4 +146,21 @@ footer {
   background-position: bottom center;
   background-image: url(../Images/allrightsback.svg);
   /* background-color: var(--secondary-color); */
+}
+@media screen and (max-width:768px) {
+  .frontendTechnologies
+  {
+    width: 100%;
+    /* background-image: linear-gradient(to right bottom, black 50%,blue 50%); */
+    /* background-color:grey; */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-image: url(../Images/undraw_education_f8ru.svg);
+    background-size: 80%;
+  }
+  .container
+  {
+    background: none;
+  }
 }
