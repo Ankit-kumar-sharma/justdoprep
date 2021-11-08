@@ -3,7 +3,7 @@ displayContent.style="display:none;";
 // var myVar;
 function myLoaderFunctionality()
 {
-  setTimeout(showPage, 2000);
+  setTimeout(showPage, 3000);
 
 }
 function showPage() {
