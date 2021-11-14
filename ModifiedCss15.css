@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+main
+{
+    padding-left: 150px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url(../Images/undraw_ride_a_bicycle_-2-yok.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50%;
+    /* background-image: linear-gradient(to right bottom, black 50%,#F9A826 50%); */
+}
+section
+{
+    background-color: white;
+    backdrop-filter: blur(3px);
+    min-width: 360px;
+    width: 34%;
+    height: 94%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+header
+{
+    background-color: whitesmoke;
+    font-size: 28px;
+    color: #F9A826;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    /* border: 1px solid #FF0000; */
+}
+.userContent
+{
+    position: relative;
+    padding: 5px;
+    padding-left: 50px;
+    font-size: 18px;
+    color: black;
+    /* border: 1px solid #FF0000; */
+    height: auto;
+}
+.userContent i
+{
+    right: 50px;
+    top: 50px;
+    position: absolute;
+    /* color: black; */
+    visibility: hidden;
+}
+.userContent.success i.fa-check-circle
+{
+    color: green;
+    visibility: visible;
+}
+.userContent.error i.fa-exclamation-triangle
+{
+    color: #FF0000;
+    visibility: visible;
+}
+.userContent.error input
+{
+    border: 2px solid #FF0000;
+}
+.userContent.success input
+{
+    border: 2px solid forestgreen;
+}
+
+input[type=text],input[type=password]
+{
+    width: 90%;
+    margin: auto;
+    /* display: block; */
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #bfbfbf;
+    font-size: 18px;
+    padding: 10px;
+    padding-right: 28px;
+   
+}
+input[type=text]:hover
+{
+    border: 2px solid #F9A826;
+    border-radius: 6px;
+}
+input[type=password]:hover
+{
+    border-radius: 6px;
+    border: 2px solid #F9A826;
+}
+label
+{
+    color: #F9A826;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+small
+{
+    visibility: hidden;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+.userContent.error small
+{
+    visibility: visible;
+    color: #FF0000;
+}
+.userContent.success small
+{
+    visibility: hidden;
+}
+
+input[type=submit]
+{
+    outline: none;
+    width: 90%;
+    margin: auto;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F9A826;
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+@media screen and (max-width:800px)
+ {
+     main
+     {
+         padding-left: 0px;
+     }
+     section
+     {
+         min-width: 50%;
+         width: 100%;
+         height: 100%;
+         border-radius: 0px;
+     }
+    
+}
